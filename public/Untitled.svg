@@ -1,0 +1,12 @@
+<svg width="502" height="440" viewBox="0 0 502 440" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g clip-path="url(#clip_0_871)" width="502" height="440" data-name="Frame 1">
+	<rect width="502" height="440" data-name="Frame 1"/>
+	<path d="M167.5 34.5C167.5 36.4956 166.505 39.1851 163.01 42.4429C159.504 45.7112 154.022 48.9998 146.621 51.9179C131.863 57.7367 110.964 61.5 87.5 61.5C64.0362 61.5 43.1368 57.7367 28.3792 51.9179C20.978 48.9998 15.4963 45.7112 11.9902 42.4429C8.49544 39.1851 7.5 36.4956 7.5 34.5C7.5 32.5044 8.49544 29.8149 11.9902 26.5571C15.4963 23.2888 20.978 20.0002 28.3792 17.0821C43.1368 11.2633 64.0362 7.5 87.5 7.5C110.964 7.5 131.863 11.2633 146.621 17.0821C154.022 20.0002 159.504 23.2888 163.01 26.5571C166.505 29.8149 167.5 32.5044 167.5 34.5Z" stroke="black" stroke-width="15" data-name="Ellipse 1" class="Ellipse_1_762" transform="translate(263.5 121.5)" rx="87.5" ry="34.5"/>
+	<path d="M8.5 8.5C45 29.5 127.5 30.5 166 8.5" stroke="black" stroke-width="15" stroke-linecap="round" data-name="Vector 1" class="Vector_1_291" transform="translate(185.5 166.5)"/>
+	<path d="M8 8C44.5 29 127 30 165.5 8" stroke="black" stroke-width="15" stroke-linecap="round" data-name="Vector 2" class="Vector_2_124" transform="translate(185 198)"/>
+	<path d="M8 8C44.5 29 127 30 165.5 8" stroke="black" stroke-width="15" stroke-linecap="round" data-name="Vector 3" class="Vector_3_198" transform="translate(185 230)"/>
+</g>
+<defs><clipPath id="clip_0_871"><rect width="502" height="440"/></clipPath>
+</defs>
+</svg>

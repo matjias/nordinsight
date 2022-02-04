@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.profiles {
+  width: 100%;
+  margin: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}

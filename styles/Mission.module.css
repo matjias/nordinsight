@@ -1,0 +1,162 @@
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.missionwrapper {
+  width: 36%;
+  /* padding: 5px;
+  border-radius: 20px;
+  background: linear-gradient(30deg, #79d8ff, #da79ff); */
+}
+.mission {
+  animation: slidein 3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 40px;
+  border-radius: 20px;
+  background: #353535;
+  align-items: center;
+}
+.mission p {
+  text-align: justify;
+  padding: 5px 15px;
+}
+.illustration {
+  position: relative;
+  height: 50%;
+  width: 30%;
+}
+
+.healthicon,
+.systemicon,
+.peopleicon {
+  width: 30%;
+  position: absolute;
+  filter: invert(1);
+}
+.syshealtharrow,
+.pephealtharrow,
+.syspeparrow {
+  animation: fadein20 5s ease;
+  width: 20%;
+  position: absolute;
+  filter: invert(1);
+}
+
+.healthicon {
+  animation: fadein40 5s ease;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.systemicon {
+  animation: fadein0 5s ease;
+  bottom: 0;
+}
+
+.peopleicon {
+  animation: fadein20 5s ease;
+  bottom: 0;
+  right: 0;
+}
+
+.syspeparrow {
+  animation: fadein60 5s ease;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.syshealtharrow {
+  animation: fadein80 5s ease;
+  transform: rotate(-60deg);
+  left: 20%;
+  top: 35%;
+}
+
+.pephealtharrow {
+  animation: fadein80 5s ease;
+  transform: rotate(-120deg);
+  right: 20%;
+  top: 35%;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadein0 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein20 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein40 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein60 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein80 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

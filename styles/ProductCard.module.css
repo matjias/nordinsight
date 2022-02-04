@@ -1,0 +1,33 @@
+.wrapper {
+  max-height: 30%;
+  display: flex;
+  flex-flow: row nowrap;
+  background: #353535;
+  width: 80%;
+  padding: 30px;
+  border-radius: 20px;
+}
+.icon {
+  filter: invert(1);
+  width: 10%;
+  padding: 10px;
+}
+.info {
+  margin: 0 30px;
+  width: 50%;
+}
+.info p {
+  font-size: 10pt;
+}
+.keywords {
+  display: flex;
+  flex-flow: column wrap;
+}
+.keywords li {
+  list-style: none;
+  padding: 15px;
+  color: #2a2a2a;
+  background: white;
+  margin: 10px;
+  border-radius: 5px;
+}
