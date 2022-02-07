@@ -7,14 +7,14 @@ const Team: React.FC = () => {
         imageSrc: '/../public/mathias.jpeg',
         name: 'Mathias Sixten Pedersen',
         title: 'CTO & Co-founder',
-        description: '',
+        description: 'MSc. Computer Science',
         linkedInUrl: 'https://linkedin.com/in/sixped'
     }
     const simonInfo = {
         imageSrc: '/../public/simon.jpg',
         name: 'Simon Elliott Thomassen',
         title: 'CEO & Co-founder',
-        description: '',
+        description: 'MSc. Health Informatics',
         linkedInUrl: 'https://www.linkedin.com/in/simon-elliott-thomassen-884682a1/'
     }
 

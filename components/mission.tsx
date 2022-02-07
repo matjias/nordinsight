@@ -22,31 +22,23 @@ const Mission: React.FC = () => {
 
   return (
     <div className={styles.wrapper}>
-       <div className={styles.missionwrapper}>
-                    
-      {showElements && (
-        <React.Fragment>
-        <div className={styles.mission}>
-          <h3>Our Mission</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            scelerisque ultricies purus, a malesuada justo pellentesque in.
-            Maecenas nec tortor vestibulum, condimentum mauris eu, feugiat est.
-            Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            Suspendisse nulla purus, volutpat vel efficitur a, dignissim non ex.
-            Aliquam dictum nisi posuere felis pellentesque, vitae bibendum magna
-            accumsan. Donec luctus dignissim neque.{" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            scelerisque ultricies purus, a malesuada justo pellentesque in.
-            Maecenas nec tortor vestibulum, condimentum mauris eu, feugiat est.
-            Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            Suspendisse nulla purus, volutpat vel efficitur a, dignissim non ex.
-            Aliquam dictum nisi posuere felis pellentesque, vitae bibendum magna
-            accumsan. Donec luctus dignissim neque.{" "}
-          </p>
-        </div>
-        </React.Fragment>
-      )}
+      <div className={styles.missionwrapper}>
+        {showElements && (
+          <React.Fragment>
+            <div className={styles.mission}>
+              <h3>Our Mission</h3>
+              <p>
+                Today there is a lack of safety tools for radiologists and
+                radiographers when MRI-scanning patients with medical devices.
+                That means increased risk for patients, insecurity for medical
+                staff and loads of time wasted. Our mission is to provide the
+                right information in a user-friendly way, that ensures that all
+                patients with medical devices can receive a trouble-free MRI
+                scan.
+              </p>
+            </div>
+          </React.Fragment>
+        )}
       </div>
       <div ref={refWrapper} className={styles.illustration}>
         {showElements && (

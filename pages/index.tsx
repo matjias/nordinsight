@@ -8,6 +8,7 @@ import Products from "../components/products";
 import Team from "../components/team";
 import Background from "../components/background";
 import Contact from "../components/contact";
+import Footer from "../components/footer";
 
 const Home: React.FC= () => {
 
@@ -37,6 +38,7 @@ const Home: React.FC= () => {
       <section id='contact' className={styles.slide}>
         <Contact />
       </section>
+        <Footer />
       {/* <Background className={styles.bgbottom} /> */}
     </div>
   );

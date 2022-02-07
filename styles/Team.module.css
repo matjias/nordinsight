@@ -1,11 +1,13 @@
 .wrapper {
+  height: 100%;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: flex-start;
   align-items: center;
 }
 .profiles {
   width: 100%;
-  margin: 50px;
+  margin: 100px;
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;

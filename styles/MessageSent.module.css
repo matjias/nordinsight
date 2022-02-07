@@ -1,0 +1,14 @@
+.wrapper {
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.messageicon {
+  width: 20%;
+  filter: invert(1);
+}
+.wrapper h2 {
+  margin: 40px 0 0 0;
+}

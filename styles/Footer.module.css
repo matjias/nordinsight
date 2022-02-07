@@ -1,0 +1,18 @@
+.wrapper {
+  border-top: 1px solid #aaa;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 10%;
+  padding: 30px 0;
+}
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+.linkedin {
+  filter: invert(1);
+  width: 30px;
+  cursor: pointer;
+}

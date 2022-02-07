@@ -72,24 +72,7 @@ textarea:focus,
 button:focus {
   outline: none;
 }
-/* .Mascot_svg__ellipse {
-  margin: 8px 0 0 0;
-  height: 40px;
-  width: 100px;
-  border-radius: 50%;
-  border: 8px solid;
-}
-
-.Mascot_svg__curve1,
-.Mascot_svg__curve2,
-.Mascot_svg__curve3 {
-  width: 110px;
-  margin: -20px 0 0 -5px;
-  height: 40px;
-  border: solid 8px;
-  border-color: transparent transparent white transparent;
-  border-radius: 0 0 50% 50%/20px;
-} */
+/* 
 .Mascot_svg__curve1 {
   animation: fadein2 2s ease;
 }
@@ -143,4 +126,4 @@ button:focus {
   100% {
     opcacity: 1;
   }
-}
+} */
