@@ -1,5 +1,4 @@
 import styles from "../styles/Home.module.css";
-import { getAllMenuItems } from "../lib/page";
 import Head from "next/head";
 import Navigation from "../components/navigation";
 import Landing from "../components/landing";
@@ -45,12 +44,3 @@ const Home: React.FC= () => {
 };
 
 export default Home;
-
-export async function getStaticProps() {
-  const allMenuItems = await getAllMenuItems();
-  return {
-    props: {
-      allMenuItems,
-    },
-  };
-}
