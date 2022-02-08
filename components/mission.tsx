@@ -45,7 +45,7 @@ const Mission: React.FC = () => {
           <React.Fragment>
             <div className={styles.healthicon}>
               <Image
-                src="/../public/heart.png"
+                src="/heart.png"
                 width={1000}
                 height={1000}
                 alt="Future"
@@ -53,7 +53,7 @@ const Mission: React.FC = () => {
             </div>
             <div className={styles.systemicon}>
               <Image
-                src="/../public/data-management.png"
+                src="/data-management.png"
                 width={1000}
                 height={1000}
                 alt="Future"
@@ -61,7 +61,7 @@ const Mission: React.FC = () => {
             </div>
             <div className={styles.peopleicon}>
               <Image
-                src="/../public/people.png"
+                src="/people.png"
                 width={1000}
                 height={1000}
                 alt="Future"
@@ -69,7 +69,7 @@ const Mission: React.FC = () => {
             </div>
             <div className={styles.syshealtharrow}>
               <Image
-                src="/../public/rarrow.png"
+                src="/rarrow.png"
                 width={1000}
                 height={1000}
                 alt="Future"
@@ -77,7 +77,7 @@ const Mission: React.FC = () => {
             </div>
             <div className={styles.pephealtharrow}>
               <Image
-                src="/../public/rarrow.png"
+                src="/rarrow.png"
                 width={1000}
                 height={1000}
                 alt="Future"
@@ -85,7 +85,7 @@ const Mission: React.FC = () => {
             </div>
             <div className={styles.syspeparrow}>
               <Image
-                src="/../public/darrow.png"
+                src="/darrow.png"
                 width={1000}
                 height={1000}
                 alt="Future"

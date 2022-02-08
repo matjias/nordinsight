@@ -10,7 +10,7 @@ const Footer = () => {
             <p>1073 København K</p>
         </div>
         <div className={styles.contact}>
-            <div className={styles.linkedin} ><Link href='https://www.linkedin.com/company/nordinsight/' passHref><Image src='/../public/linkedin.png' width={1000} height={1000} alt="icon" /></Link> </div>
+            <div className={styles.linkedin} ><Link href='https://www.linkedin.com/company/nordinsight/' passHref><Image src='/linkedin.png' width={1000} height={1000} alt="icon" /></Link> </div>
             <p>Email us: <Link href='https://www.linkedin.com/company/nordinsight/' passHref>info@nordinsight.com</Link></p>
         </div>
     </footer>)

@@ -24,7 +24,7 @@ const Landing: React.FC = () => {
       
       <div className={styles.icon}>
         <Image
-          src="/../public/Doctor 4.svg"
+          src="/Doctor 4.svg"
           width={1000}
           height={1000}
           alt="Future"

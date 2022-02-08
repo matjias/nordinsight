@@ -16,7 +16,7 @@ const Profile: React.FC<{info: ProfileInfo}> = ({info}) => {
         <h5 className={styles.name}>{info.name}</h5>
         <p className={styles.title}>{info.title}</p>
         <p className={styles.description}>{info.description}</p>
-        <div className={styles.linkedin} ><Link href={info.linkedInUrl} passHref><Image src='/../public/linkedin.png' width={1000} height={1000} alt="icon" /></Link> </div>
+        <div className={styles.linkedin} ><Link href={info.linkedInUrl} passHref><Image src='/linkedin.png' width={1000} height={1000} alt="icon" /></Link> </div>
     </div>)
 }
 

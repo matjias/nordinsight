@@ -4,14 +4,14 @@ import Profile from './profile';
 const Team: React.FC = () => {
 
     const mathiasInfo = {
-        imageSrc: '/../public/mathias.jpeg',
+        imageSrc: '/mathias.jpeg',
         name: 'Mathias Sixten Pedersen',
         title: 'CTO & Co-founder',
         description: 'MSc. Computer Science',
         linkedInUrl: 'https://linkedin.com/in/sixped'
     }
     const simonInfo = {
-        imageSrc: '/../public/simon.jpg',
+        imageSrc: '/simon.jpg',
         name: 'Simon Elliott Thomassen',
         title: 'CEO & Co-founder',
         description: 'MSc. Health Informatics',
