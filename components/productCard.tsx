@@ -5,7 +5,8 @@ interface ProductInfo {
   iconSrc: string;
   title: string;
   description: string;
-  keywords: string[];
+  featureTitle: string;
+  features: string[];
 }
 
 const ProductCard: React.FC<{ info: ProductInfo }> = ({ info }) => {
@@ -18,11 +19,15 @@ const ProductCard: React.FC<{ info: ProductInfo }> = ({ info }) => {
         <h4>{info.title}</h4>
         <p>{info.description}</p>
       </div>
-      <ul className={styles.keywords}>
-        {info.keywords.map((word) => (
+      <div>
+      <h5>{info.featureTitle}</h5>
+      <ul className={styles.features}>
+        {info.features.map((word) => (
           <li key={word}>{word}</li>
         ))}
       </ul>
+      </div>
+      
     </div>
   );
 };

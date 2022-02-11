@@ -4,12 +4,10 @@
   widht: 100vh;
 }
 .slide {
-  overflow: hidden;
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  height: 100%;
   widht: 100%;
   z-index: 1;
 }
@@ -48,4 +46,13 @@
   100% {
     left: 100%;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .slide {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
 }
