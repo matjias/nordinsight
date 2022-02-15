@@ -31,3 +31,9 @@
   margin: auto;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    margin: 30px;
+  }
+}

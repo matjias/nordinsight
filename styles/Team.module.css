@@ -5,9 +5,11 @@
   justify-content: flex-start;
   align-items: center;
 }
+.wrapper h3 {
+  margin-bottom: 100px;
+}
 .profiles {
   width: 100%;
-  margin: 100px;
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;

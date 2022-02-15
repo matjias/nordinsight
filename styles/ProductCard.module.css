@@ -38,3 +38,19 @@
   float: left;
   width: 1.4em;
 }
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    flex-flow: column nowrap;
+    margin-top: 50px;
+  }
+
+  .icon {
+    width: 50%;
+    margin: auto;
+  }
+  .info {
+    margin: 20px 0;
+    width: auto;
+  }
+}

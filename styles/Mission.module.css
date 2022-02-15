@@ -83,6 +83,23 @@
   top: 35%;
 }
 
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    flex-flow: column nowrap;
+  }
+  .missionwrapper {
+    width: auto;
+    margin: 20px;
+  }
+  .mission {
+    padding: 15px 20px;
+  }
+  .illustration {
+    height: 30vh;
+    width: 60%;
+  }
+}
+
 @keyframes slidein {
   0% {
     transform: translateX(-200%);

@@ -118,3 +118,34 @@
   border: none;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    min-height: 100%;
+  }
+  .wrapper form {
+    flex-flow: column nowrap;
+    height: 100%;
+  }
+  .basicinfo {
+    width: auto;
+  }
+  .basicinfo * {
+    margin: 10px 0;
+  }
+  .roleoptions label {
+    margin: 0;
+  }
+  .roleoptions input {
+    display: block;
+  }
+  .message {
+    margin-top: 20px;
+    height: 300px;
+    width: auto;
+  }
+  .submitbtn {
+    margin: auto 0 auto auto;
+    position: relative;
+  }
+}

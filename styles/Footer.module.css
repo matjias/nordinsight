@@ -16,3 +16,18 @@
   width: 30px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    flex-flow: column nowrap;
+  }
+  .wrapper > * {
+    margin-bottom: 20px;
+  }
+  /* .contact {
+    order: 1;
+  }
+  .info {
+    order: 2;
+  } */
+}
