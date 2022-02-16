@@ -6,6 +6,8 @@
 }
 .missionwrapper {
   width: 36%;
+  display: flex;
+  flex-flow: column nowrap;
   /* padding: 5px;
   border-radius: 20px;
   background: linear-gradient(30deg, #79d8ff, #da79ff); */
@@ -34,7 +36,7 @@
 .peopleicon {
   width: 30%;
   position: absolute;
-  filter: invert(1);
+  filter: invert(0.9);
 }
 .syshealtharrow,
 .pephealtharrow,
@@ -42,7 +44,7 @@
   animation: fadein20 5s ease;
   width: 20%;
   position: absolute;
-  filter: invert(1);
+  filter: invert(0.9);
 }
 
 .healthicon {
@@ -82,6 +84,26 @@
   right: 20%;
   top: 35%;
 }
+.partners {
+  margin: 30px;
+  height: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.missionwrapper h5 {
+  color: #bbb;
+  margin-top: 30px;
+  width: 100%;
+  font-size: calc(0.4rem + 0.6vw);
+  animation: fadeinlogo 5s ease;
+}
+.partnerlogo {
+  filter: invert(0.65);
+  width: 40%;
+  animation: fadeinlogo 5s ease;
+}
 
 @media only screen and (max-width: 768px) {
   .wrapper {
@@ -98,6 +120,13 @@
     height: 30vh;
     width: 60%;
   }
+  .partners {
+    margin-top: 50px;
+    flex-flow: column nowrap;
+  }
+  .partnerlogo {
+    width: 60%;
+  }
 }
 
 @keyframes slidein {
@@ -106,6 +135,18 @@
   }
   100% {
     transform: translateX(0%);
+  }
+}
+
+@keyframes fadeinlogo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

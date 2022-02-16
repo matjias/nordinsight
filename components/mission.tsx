@@ -37,6 +37,25 @@ const Mission: React.FC = () => {
                 scan.
               </p>
             </div>
+            {/* <h5>Working with</h5> */}
+            <div className={styles.partners}>
+              <div className={styles.partnerlogo}>
+                <Image
+                  src="/inno.svg"
+                  width={300}
+                  height={34}
+                  alt="Future"
+                />
+              </div>
+              <div className={styles.partnerlogo}>
+                <Image
+                  src="/nhl.svg"
+                  width={260}
+                  height={80}
+                  alt="Future"
+                />
+              </div>
+            </div>
           </React.Fragment>
         )}
       </div>
