@@ -14,8 +14,8 @@ const Home: React.FC= () => {
   return (
     <div className={styles.container}>
       <Background className={styles.bgtop} />
-      <div className={styles.bgwave}>
-      </div>
+      {/* <div className={styles.bgwave}>
+      </div> */}
       <Head>
         <title>NordInsight - Building the future</title>
         <meta name="description" content="Landing page of NordInsight" />

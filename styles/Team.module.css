@@ -14,3 +14,29 @@
   justify-content: space-evenly;
   flex-flow: row wrap;
 }
+.advisors {
+  padding: 50px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  display: flex;
+  flex-flow: row wrap;
+}
+.advisors h4 {
+  font-size: calc(1rem + 1vw);
+  font-weight: 500;
+  margin: 20px;
+  width: 100%;
+}
+.advisor {
+  margin: 20px;
+}
+.advisor > * {
+  font-size: 1.3rem;
+  max-width: 230px;
+  margin-bottom: 10px;
+  display: block;
+}
+.advisor em {
+  font-size: 0.9rem;
+}
