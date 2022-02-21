@@ -1,6 +1,6 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, ReactNode } from "react";
 
-const ShowWhenInView = ({ children }) => {
+const ShowWhenInView: React.FC<{children: ReactNode}> = ({ children }) => {
   const refWrapper = useRef(null);
   const [showElements, setShowElements] = useState(false);
 
@@ -9,7 +9,6 @@ const ShowWhenInView = ({ children }) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setShowElements(true);
-          console.log("hej");
         }
       });
     });

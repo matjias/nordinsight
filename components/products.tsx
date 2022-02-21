@@ -1,5 +1,6 @@
 import styles from '../styles/Products.module.css'
 import ProductCard from './productCard';
+import AnimateOnScroll from './utils/AnimateOnScroll';
 
 const Products: React.FC = () => {
 
