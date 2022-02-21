@@ -17,8 +17,9 @@ const Home: React.FC= () => {
       {/* <div className={styles.bgwave}>
       </div> */}
       <Head>
-        <title>NordInsight - Building the future</title>
-        <meta name="description" content="Landing page of NordInsight" />
+        <title>NordInsight - Improving MRI safety through data</title>
+        <meta name="description" content="The only implant database radiologists and radiographers
+            will ever need to find MRI-conditinals" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       </Head>
