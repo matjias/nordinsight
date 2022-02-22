@@ -32,10 +32,10 @@ const Team: React.FC = () => {
           <Link href="https://www.linkedin.com/in/clausrehfeld"><h5>Claus Rehfeld</h5></Link>
           <em>Director at Nordic Healthcare Group</em>
         </div>
-        <div className={styles.advisor}>
+        {/* <div className={styles.advisor}>
           <Link href="https://www.linkedin.com/in/jensroedandersen"><h5>Jens Heyn Roed Andersen</h5></Link>
           <em>Cybersecurity SME</em>
-        </div>
+        </div> */}
         <div className={styles.advisor}>
           <Link href="https://www.linkedin.com/in/clausroemer"><h5>Claus Rømer Andersen</h5></Link>
           <em>Stategic Regulatory Navigation</em>
