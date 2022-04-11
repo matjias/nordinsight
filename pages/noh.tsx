@@ -2,8 +2,12 @@ import Image from "next/image";
 import FaqElement from "../components/utils/FAQElement";
 import ProgressBar from "../components/utils/ProgressBar";
 import styles from "../styles/TestInfo.module.css";
+import fs from 'fs';
+import { marked } from 'marked';
+import path from 'path';
+import matter from 'gray-matter';
 
-const TestInfo: React.FC = () => {
+const TestInfo: React.FC<{content: string}> = ({content}) => {
   const startDate = new Date("2022-04-08");
   const endDate = new Date("2022-04-12");
   const now = new Date();
@@ -61,23 +65,7 @@ const TestInfo: React.FC = () => {
           implantater, samt at vurdere trygheden af den information.{" "}
         </p>
         <h4>Instruktioner</h4>
-        <ol>
-          <li>
-            Før du sætter dig ved computeren, enten i forbindelse med skanning
-            eller visitering af patienter, tager du et clipboard og et
-            tilhørende skema{" "}
-          </li>
-          <li>
-            Før du sætter dig ved computeren, enten i forbindelse med skanning
-            eller visitering af patienter, tager du et clipboard og et
-            tilhørende skema{" "}
-          </li>
-          <li>
-            Før du sætter dig ved computeren, enten i forbindelse med skanning
-            eller visitering af patienter, tager du et clipboard og et
-            tilhørende skema{" "}
-          </li>
-        </ol>
+        <div dangerouslySetInnerHTML={{__html: content}}></div>
       </div>
 
       <div className={styles.faq}>
@@ -85,26 +73,8 @@ const TestInfo: React.FC = () => {
         <ul>
           <li>
             <FaqElement
-              title="Er det nu?"
-              description="fsdlkfjsd fsdkfmnsld f"
-            />
-          </li>
-          <li>
-            <FaqElement
-              title="Er det nu?"
-              description="fsdlkfjsd fsdkfmnsld f"
-            />
-          </li>
-          <li>
-            <FaqElement
-              title="Er det nu?"
-              description="fsdlkfjsd fsdkfmnsld f"
-            />
-          </li>
-          <li>
-            <FaqElement
-              title="Er det nu?"
-              description="fsdlkfjsd fsdkfmnsld f"
+              title="Hvor mange ?"
+              description="Implantater"
             />
           </li>
         </ul>
@@ -113,7 +83,21 @@ const TestInfo: React.FC = () => {
         <script src="//code.tidio.co/ay1gjvtsnztcwvotks3zsaj4ucti1bew.js" async></script>
       </div>
     </div>
-  );
+  ); 
 };
-
 export default TestInfo;
+
+export async function getStaticProps({ params }) {
+  const docDirectory = path.join(process.cwd(), 'docs/instructions.md')
+
+  const data = fs.readFileSync(docDirectory, 'utf8');
+  const doc = matter(data);
+  const content = marked.parse(doc.content);
+
+  return {
+    props: {
+      ...doc.data,
+      content
+    }
+  }
+}
