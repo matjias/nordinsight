@@ -1,0 +1,47 @@
+.description {
+  display: none;
+  margin-top: 0;
+}
+.wrapper {
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  margin-bottom: 5px;
+}
+.wrapper {
+  padding-left: 20px;
+}
+
+.toggle {
+  display: flex;
+}
+.arrow {
+  height: 20px;
+  width: 10px;
+  position: absolute;
+  top: 13px;
+  left: 0px;
+}
+
+.arrow::before,
+.arrow::after {
+  position: relative;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 2px;
+  background: white;
+  transition: 0.3s ease-in-out;
+}
+
+.arrow::before {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.arrow::after {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+.open .arrow {
+  transform: rotate(90deg);
+}
