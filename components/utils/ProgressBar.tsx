@@ -19,6 +19,7 @@ const ProgressBar: React.FC<{ progress: number, start: string, end: string }> = 
   return (
     <div className={styles.outer}>
         <span className={styles.start}>{start}</span>
+        {/* <div className={styles.marker}></div> */}
       <div className={styles.inner}>
         <div
           className={styles.mask}

@@ -1,15 +1,15 @@
 .outer {
   position: relative;
-  height: 15px;
+  height: 20px;
   background: white;
 }
 .inner {
   overflow: hidden;
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 6px;
+  left: 6px;
   height: 9px;
-  width: calc(100% - 6px);
+  width: calc(100% - 12px);
   background: linear-gradient(45deg, #76ffe6, #6951ff);
 }
 .outer,
@@ -23,6 +23,16 @@
   position: absolute;
   height: 100%;
   background: white;
+}
+.marker {
+  float: right;
+  content: "";
+  position: absolute;
+  right: 0px;
+  display: block;
+  width: 10px;
+  height: 20px;
+  background: blue;
 }
 .ani {
   animation: 3s prog;

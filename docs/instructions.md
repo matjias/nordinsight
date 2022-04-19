@@ -1,13 +1,13 @@
 ---
 title: Instructions
 author: NordInsight
-start: "2022-04-10"
-end: "2022-05-20"
+start: "2022-05-10"
+end: "2022-06-10"
 faq:
   [
     {
       q: Hvornår starter jeg tiden på implantatsøgning?,
-      a: Tiden på stopuret startes i det du går i gang med din fremsøgning af implantatets MR-conditionals. Altså først EFTER du har bekræftet hvilket implant der skal fremsøges conditionals på.,
+      a: Tiden på stopuret startes i det du går i gang med din fremsøgning af implantatets MR-conditionals. Altså EFTER du har bekræftet hvilket implant der skal fremsøges conditionals på.,
     },
     {
       q: Hvor ofte skal jeg nedskrive mine målinger?,

@@ -10,12 +10,12 @@ import matter from "gray-matter";
 const TestInfo: React.FC<{
   content: string;
   faq: { q: string; a: string }[];
-}> = ({ content, faq }) => {
-  const startDate = new Date("2022-04-08");
-  const endDate = new Date("2022-05-12");
+  start: string;
+  end: string;
+}> = ({ content, faq, start, end }) => {
+  const startDate = new Date(start);
+  const endDate = new Date(end);
   const now = new Date();
-
-  console.log(faq);
 
   const interval = endDate.getTime() - startDate.getTime();
   const progress = now.getTime() - startDate.getTime();
@@ -56,7 +56,7 @@ const TestInfo: React.FC<{
           <li className={styles.current}>Fase 1</li>
           <li className={styles.next}>Fase 2</li>
         </ul>
-        <h5 className={styles.phase}>Grundmålinger</h5>
+        <h5 className={styles.phase}>Baselinemålinger</h5>
         <ProgressBar
           progress={per}
           start={dateToString(startDate)}
@@ -86,11 +86,16 @@ const TestInfo: React.FC<{
       </div>
       <div className={styles.extra}>
         <h5>
+          Kontakt NordInsight på mail: &nbsp;
+          <a href="mailto:info@nordinsight.com"><u>info@nordinsight.com</u></a> eller
+          vedhjælp af chatten her på siden.
+        </h5>
+        {/* <h5>
           <a href="#">
             <u>Download</u>
           </a>{" "}
           tilhørende materiale.
-        </h5>
+        </h5> */}
         <script
           src="//code.tidio.co/ay1gjvtsnztcwvotks3zsaj4ucti1bew.js"
           async

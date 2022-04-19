@@ -3,6 +3,7 @@
   margin-top: 0;
 }
 .wrapper {
+  cursor: pointer;
   border-bottom: 1px solid #ddd;
   position: relative;
   margin-bottom: 5px;
