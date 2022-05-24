@@ -1,0 +1,75 @@
+.wrapper {
+}
+.info {
+  display: flex;
+  padding: 30px;
+}
+.info > * {
+  margin: 10px;
+}
+.description {
+  max-width: 45%;
+}
+.browser-title {
+  margin: 0;
+}
+.steps {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+}
+.steps li {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.steps li:first-child,
+.steps li:last-child {
+  margin: 0;
+}
+.steps,
+.browser-banner {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.why {
+  text-align: center;
+}
+.points {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.point-element {
+  margin: 20px;
+}
+.icons {
+  display: flex;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .info,
+  .steps,
+  .points {
+    flex-flow: column;
+    padding: 0;
+  }
+  .description {
+    max-width: 100%;
+  }
+  .steps li {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .steps ol {
+    padding-left: 20px;
+  }
+  .icons {
+  }
+  .browser-icon {
+    flex-basis: 50%;
+  }
+}

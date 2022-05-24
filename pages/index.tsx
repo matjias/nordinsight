@@ -8,13 +8,14 @@ import Team from "../components/team";
 import Background from "../components/background";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
+import Product from "../components/product";
 
 const Home: React.FC= () => {
 
   return (
     <div className={styles.container}>
-      <Background className={styles.bgtop} />
-      {/* <div className={styles.bgwave}>
+      {/* <Background className={styles.bgtop} />
+      <div className={styles.bgwave}>
       </div> */}
       <Head>
         <title>NordInsight - Improving MRI safety through data</title>
@@ -28,10 +29,7 @@ const Home: React.FC= () => {
         <Landing />
       </section>
       <section id='mision' className={styles.slide}>
-        <Mission />
-      </section>
-      <section id='products' className={styles.slide}>
-        <Products />
+        <Product />
       </section>
       <section id='team' className={styles.slide}>
         <Team />
@@ -39,6 +37,14 @@ const Home: React.FC= () => {
       <section id='contact' className={styles.slide}>
         <Contact />
       </section>
+      {/* <section id='mision' className={styles.slide}>
+        <Mission />
+      </section>
+      <section id='products' className={styles.slide}>
+        <Products />
+      </section>
+      
+       */}
         <Footer />
       {/* <Background className={styles.bgbottom} /> */}
     </div>

@@ -1,8 +1,9 @@
 .wrapper {
   width: 100%;
   display: flex;
-  flex-flow: column nowrap;
-  margin-bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
 }
 .hide {
   display: none;
@@ -12,7 +13,6 @@
 }
 .menuitems {
   padding: 10px;
-  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -24,8 +24,8 @@
 }
 .item {
   display: block;
-  padding: 15px;
-  font-weight: 600;
+  padding: 15px 20px;
+  font-weight: 200;
   margin: 15px;
   position: relative;
   z-index: 1;
@@ -61,26 +61,35 @@
   visibility: visible;
   height: 100%;
 }
-.title {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-}
-.title h1 {
-  margin: 10px 0;
-}
-.insight {
-  font-weight: 200;
-}
 .logo {
-  width: calc(1.6rem + 7vw);
-  filter: invert(1);
+  max-width: 300px;
+}
+.contact {
+  font-weight: 400;
+  color: black;
+}
+.contact:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  background: var(--blue-grad);
+}
+.contact:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+.contact:hover {
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
+  .logo {
+    width: 50%;
+  }
   .item {
-    padding: 10px;
-    margin: 10px;
+    padding: 15px 20px;
+    margin: 20px;
   }
   .wrapper {
     align-items: flex-start;
@@ -89,8 +98,12 @@
     margin: 25px;
   }
   .menuitems {
+    margin-top: 40px;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
     flex-flow: column wrap;
-    position: absolute;
+    position: fixed;
     right: 0;
     background: #2a2a2a;
     top: calc(calc(4rem + 4vw));
@@ -111,8 +124,8 @@
 
 /* burger */
 .burger {
-  top: 40px;
-  right: 35px;
+  top: 50px;
+  right: 0px;
   position: absolute;
   width: 30px;
 }

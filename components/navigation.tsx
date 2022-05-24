@@ -1,7 +1,7 @@
 import styles from "../styles/Navigation.module.css";
 import Link from "next/link";
-import Logo from "../public/Mascot.svg";
 import { useState } from "react";
+import Image from 'next/image'
 
 const Navigation: React.FC = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -16,6 +16,9 @@ const Navigation: React.FC = () => {
         menuIsOpen ? styles.wrapper + " " + styles.bg2a : styles.wrapper
       }
     >
+      <div className={styles.logo}>
+        <Image src='/LogohvidFinal.png' height='619' width='3000' alt='logo' />
+      </div>
       <div
         onClick={toggleMenu}
         className={
@@ -34,14 +37,14 @@ const Navigation: React.FC = () => {
           menuIsOpen ? styles.menuitems : styles.menuitems + " " + styles.hide
         }
       >
-        <Link href={"#mision"}>
+        <Link href={"#product"}>
           <a onClick={toggleMenu} className={styles.item}>
-            Mission
+            Product
           </a>
         </Link>
-        <Link href={"#products"}>
+        <Link href={"#company"}>
           <a onClick={toggleMenu} className={styles.item}>
-            Products
+            Company
           </a>
         </Link>
         <Link href={"#team"}>
@@ -50,28 +53,10 @@ const Navigation: React.FC = () => {
           </a>
         </Link>
         <Link href={"#contact"}>
-          <a onClick={toggleMenu} className={styles.item}>
-            Contact
+          <a onClick={toggleMenu} className={`${styles.item} ${styles.contact}`}>
+            Contact us
           </a>
         </Link>
-      </div>
-      <div className={styles.title}>
-        <div className={styles.logo}>
-          <Logo className={styles.logosvg} />
-          {/* <Image
-          src="/../public/Mascot.svg"
-          width={502}
-          height={440}
-          alt="NordInsight"
-        /> */}
-          {/* <div className={styles.ellipse}></div>
-        <div className={styles.curve1}></div>
-        <div className={styles.curve2}></div>
-        <div className={styles.curve3}></div> */}
-        </div>
-        <h1>
-          Nord<span className={styles.insight}>Insight</span>
-        </h1>
       </div>
     </nav>
   );

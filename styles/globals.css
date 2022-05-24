@@ -6,7 +6,25 @@
     rgba(166, 230, 255, 1) 0%,
     rgba(187, 120, 252, 1) 100%
   );
-
+:root {
+  --dark-grey: #111111;
+  --main-grey: #212121;
+  --light-grey: #2a2a2a;
+  --bright-grey: #404040;
+  --main-white: #eee;
+  --main-red: #ff8181;
+  --main-blue: #4ea5d9;
+  --nav-icon-size: 20px;
+  --nav-spacing: 20px;
+  --nav-width: 250px;
+  --top-margin: 30px;
+  --bottom-margin: 50px;
+  --blue-grad: linear-gradient(
+    110deg,
+    rgba(90, 205, 205, 1) 0%,
+    rgba(150, 205, 255, 1) 100%
+  );
+}
 html,
 body {
   font-size: 100%;
@@ -25,23 +43,35 @@ h1 {
 
 h2 {
   font-weight: 400;
-  font-size: calc(1.5rem + 2.5vw);
+  margin: 40px 0;
+  font-size: calc(2rem + 2.5vw);
 }
 
 h3 {
-  margin: 20px 0;
+  margin: 40px 0;
   font-weight: 200;
   font-size: calc(2rem + 2vw);
 }
 h4 {
-  margin: 10px 0;
-  font-weight: 400;
+  margin: 40px 0;
+  font-weight: 500;
   font-size: calc(1.5rem + 1vw);
 }
 h5 {
-  margin: 10px 0;
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: calc(0.7rem + 1vw);
+}
+h6 {
+  opacity: 0.7;
+  margin: 20px 0;
+  font-weight: 300;
+  font-size: calc(0.5rem + 0.8vw);
+}
+p {
+  margin: 20px 0;
   font-weight: 200;
-  font-size: 1.3rem;
+  font-size: calc(1rem + 0.3vw);
 }
 
 a {
@@ -51,11 +81,7 @@ a {
 
 em {
   font-style: normal;
-  background: linear-gradient(
-    110deg,
-    rgba(90, 205, 205, 1) 0%,
-    rgba(150, 205, 255, 1) 100%
-  );
+  background: var(--blue-grad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

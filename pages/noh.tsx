@@ -44,7 +44,7 @@ const TestInfo: React.FC<{
         &times;
         <div>
           <Image
-            src="/logo_Nordsjaelland_png.png"
+            src="/noh.png"
             alt="noh"
             layout="fill"
             objectFit="contain"

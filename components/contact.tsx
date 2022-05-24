@@ -39,7 +39,7 @@ const Contact = () => {
 
   return (
     <div className={styles.wrapper}>
-      <h3>Contact</h3>
+      <h3>Get in touch</h3>
       {isSent && <MessageSent name={formData.firstname} />}
       {!isSent && <form autoComplete="none" onSubmit={send}>
         <div className={styles.basicinfo}>
