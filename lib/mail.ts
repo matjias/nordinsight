@@ -28,9 +28,9 @@ interface MailInfo {
 // async..await is not allowed in global scope, must use a wrapper
 export const sendMail = async(mailInfo: MailInfo): Promise<any> => {
   let info = await transporter.sendMail({
-    from: `"${mailInfo.sender}" <${mailInfo.senderMail}>`, // sender address
+    from: `"${mailInfo.sender}" <${'form@nordinsight.com'}>`, // sender address
     to: mailInfo.recipients.map(r => r + ','), // list of receivers
-    subject: mailInfo.subject, // Subject line
+    subject: `${mailInfo.subject} (${mailInfo.senderMail})`, // Subject line
     text: mailInfo.body, // html body
     html: mailInfo.body, // html body
   });

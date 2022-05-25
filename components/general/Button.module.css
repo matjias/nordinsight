@@ -42,6 +42,9 @@
 .primary:hover img {
   filter: invert(100);
 }
+.primary:focus {
+  border: transparent;
+}
 .secondary {
   font-weight: 300;
   color: var(--main-white);

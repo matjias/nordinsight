@@ -36,7 +36,7 @@ const Product: React.FC = () => {
             <Image src="/chrome.png" height={80} width={80} alt="contact" />
           </div>
           <div className={styles["browser-icon"]}>
-            <Image src="/ie.png" height={80} width={80} alt="contact" />
+            <Image src="/edge.png" height={80} width={80} alt="contact" />
           </div>
           <div className={styles["browser-icon"]}>
             <Image src="/safari.png" height={80} width={80} alt="contact" />
