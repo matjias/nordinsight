@@ -10,7 +10,7 @@ interface FormData {
 }
 
 const Contact = () => {
-  const [formData, setFormData] = useState<FormData>({firstname: 'test', lastname:'', email: '', role: '', message: ''});
+  const [formData, setFormData] = useState<FormData>({firstname: '', lastname:'', email: '', role: '', message: ''});
   const [isSent, setIsSent] = useState<boolean>(false);
 
   const updateFormData = ({ target }) => {

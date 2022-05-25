@@ -30,6 +30,20 @@
   margin: 0 2%;
   animation: fadeinlogo 5s ease;
   min-width: 0;
+  opacity: 0.5;
+}
+/* .partners .partnerlogo:nth-child(1),
+.partners .partnerlogo:nth-child(2) {
+  flex-grow: 2;
+} */
+.partnerlogo:nth-child(2) {
+  transform: translateY(-1.5px);
+}
+.partnerlogo:nth-child(4) {
+  flex-shrink: 2;
+}
+.partnerlogo:nth-child(5) {
+  flex-shrink: 1.45;
 }
 
 @media only screen and (max-width: 768px) {
@@ -50,5 +64,12 @@
   }
   .title {
     position: absolute;
+  }
+  .partners {
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+  .partnerlogo {
+    max-width: 40%;
   }
 }

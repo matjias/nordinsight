@@ -5,10 +5,11 @@ type Data = {
     status: number
   }
 
-export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
     if (req.method === 'POST') {
         config();
-      sendMail(req.body);
+      const info = await sendMail(req.body);
+      console.log(info);
     } 
     res.json({status: 200})
   }
