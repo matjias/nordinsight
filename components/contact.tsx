@@ -53,7 +53,7 @@ const Contact = () => {
         <React.Fragment>
           <h3>Get in touch</h3>
           <p>
-            Are you interested in learning more or want to collaborate? We'd
+            Are you interested in learning more or want to collaborate? We&apos;d
             love to hear from you! Contact us on{" "}
             <a href="mailto:info@nordinsight.com">info@nordinsight.com</a> or
             through the form below.
