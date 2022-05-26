@@ -29,6 +29,8 @@ const Landing: React.FC = () => {
           <span>Go to database</span>
           <Image src="/right-arrow 4.svg" height={20} width={20} />
         </Button>
+
+      <AnimateOnScroll settings={{ transformY: -5 }}>
         <div className={styles.partners}>
           <h6>Partners: </h6>
           <div className={styles.logos}>
@@ -51,6 +53,7 @@ const Landing: React.FC = () => {
             </div>
           </div>
         </div>
+        </AnimateOnScroll>
       </div>
     </div>
   );

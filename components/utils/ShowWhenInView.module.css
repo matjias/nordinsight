@@ -1,0 +1,33 @@
+.fade-in {
+  animation: fadein 3s ease;
+}
+.slide-in-left {
+  animation: slideinleft 5s ease;
+}
+.slide-in-right {
+  animation: slideinright 5s ease;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideinleft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideinright {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
