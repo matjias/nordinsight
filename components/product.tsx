@@ -21,7 +21,7 @@ const Product: React.FC = () => {
             safety, performance and clinical use. We are happy to answer any
             questions you might have - simply contact us anytime!
           </p>
-          <Button onClick={() => {}} type={ButtonType.primary}>
+          <Button onClick={() => {window.location.href = '/#contact'}} type={ButtonType.primary}>
             <span>Contact</span>
             <Image src="/send.png" height={20} width={20} alt="contact" />
           </Button>
@@ -55,7 +55,7 @@ const Product: React.FC = () => {
             integration.
           </p>
           <p>It&#39;s as easy as a Google search..</p>
-          <Button onClick={() => {}} type={ButtonType.primary}>
+          <Button onClick={() => {window.location.href = '/#contact'}} type={ButtonType.primary}>
             <span>Contact</span>
             <Image src="/send.png" height={20} width={20} alt="contact" />
           </Button>

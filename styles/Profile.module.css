@@ -15,9 +15,6 @@
   border-radius: 20px;
   overflow: hidden;
 }
-.profileimage img {
-  height: 450px;
-}
 
 .title {
   font-size: 1.2rem;

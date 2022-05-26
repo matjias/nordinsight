@@ -1,16 +1,16 @@
-import Link from "next/link";
 import styles from "../styles/Team.module.css";
 import Profile from "./profile";
+import Image from 'next/image'
 
 const Team: React.FC = () => {
   const mathiasInfo = {
-    imageSrc: "/sixten.jpg",
+    image: <Image src="/sixten.jpg"  height={600} width={467} alt="icon" />,
     name: "Mathias Sixten Pedersen",
     title: "CTO & Co-founder",
     linkedInUrl: "https://linkedin.com/in/sixped",
   };
   const simonInfo = {
-    imageSrc: "/simon.png",
+    image: <Image src="/simon.png"  height={600} width={467} alt="icon" />,
     name: "Simon Elliott Thomassen",
     title: "CEO & Co-founder",
     description: <i>“Our mission is to make software that every user can’t stop using. I’m done with software that doesn’t create value from day one.”</i>,
