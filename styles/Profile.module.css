@@ -37,7 +37,7 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 821px) {
   .wrapper {
     margin: 30px;
   }

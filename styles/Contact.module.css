@@ -3,7 +3,6 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-start;
-  min-height: 100vh;
   width: 100%;
 }
 .wrapper form {
@@ -132,7 +131,7 @@
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 821px) {
   .wrapper {
     margin-bottom: 20px;
   }

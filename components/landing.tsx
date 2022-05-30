@@ -2,13 +2,20 @@ import styles from "../styles/Landing.module.css";
 import Image from "next/image";
 import AnimateOnScroll from "./utils/AnimateOnScroll";
 import Button, { ButtonType } from "./general/Button";
+import dynamic from "next/dynamic";
+
+const Heart = dynamic(
+  () => import("./Heart"),
+  { ssr: false }
+)
 
 const Landing: React.FC = () => {
   return (
     <div className={styles.wrapper}>
       <AnimateOnScroll settings={{ transformY: -10 }}>
         <div className={styles.heart}>
-          <Image src="/image 37.png" width={1178} height={681} alt="Future" />
+          {/* <Image src="/breath.png" width={1600} height={1600} alt="Future" /> */}
+              <Heart />
         </div>
       </AnimateOnScroll>
       <div className={styles.info}>
@@ -30,7 +37,7 @@ const Landing: React.FC = () => {
           <Image src="/right-arrow 4.svg" height={20} width={20} />
         </Button>
 
-      <AnimateOnScroll settings={{ transformY: -5 }}>
+      <AnimateOnScroll settings={{ transformY: 0 }}>
         <div className={styles.partners}>
           <h6>Partners: </h6>
           <div className={styles.logos}>

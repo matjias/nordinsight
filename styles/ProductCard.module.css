@@ -39,7 +39,7 @@
   width: 1.4em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 821px) {
   .wrapper {
     flex-flow: column nowrap;
     margin-top: 50px;

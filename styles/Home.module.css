@@ -10,8 +10,8 @@
   display: flex;
   flex-direction: column;
   width: 70%;
-  min-height: 100vh;
-  margin: 0 auto;
+  margin: 0px auto;
+  margin-bottom: 200px;
   z-index: 1;
 }
 .bgtop,
@@ -51,13 +51,13 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 821px) {
   .slide {
     height: 100%;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1120px) {
   .slide {
     width: 75%;
     margin-bottom: 50px;
