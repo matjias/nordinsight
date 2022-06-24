@@ -37,7 +37,7 @@ const Product: React.FC = () => {
         </div>
       </ShowWhenInView>
 
-      <ShowWhenInView style="fade-in">
+      <ShowWhenInView style="slide-in-left">
         <SideBanner className={styles["browser-banner"]} side="left">
           <h5 className={styles["browser-title"]}>
             You can use every browser to access the database!
@@ -100,7 +100,7 @@ const Product: React.FC = () => {
               <h5>IT-security on point</h5>
               <p>
                 We follow industry leading IT-security standards that ensures
-                quality data and safety in our database
+                quality of data and integrity in our database
               </p>
             </div>
           </ShowWhenInView>
