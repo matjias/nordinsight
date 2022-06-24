@@ -10,8 +10,8 @@
 .profileimage {
   display: flex;
   justify-content: center;
-  height: 450px;
-  width: 350px;
+  max-height: 450px;
+  max-width: 350px;
   border-radius: 20px;
   overflow: hidden;
 }

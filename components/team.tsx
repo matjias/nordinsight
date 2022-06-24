@@ -13,7 +13,6 @@ const Team: React.FC = () => {
     image: <Image src="/simon.png"  height={600} width={467} alt="icon" />,
     name: "Simon Elliott Thomassen",
     title: "CEO & Co-founder",
-    description: <i>“Our mission is to make software that every user can’t stop using. I’m done with software that doesn’t create value from day one.”</i>,
     linkedInUrl:
       "https://www.linkedin.com/in/simon-elliott-thomassen-884682a1/",
   };

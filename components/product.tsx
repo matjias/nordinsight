@@ -37,7 +37,7 @@ const Product: React.FC = () => {
         </div>
       </ShowWhenInView>
 
-      <ShowWhenInView style="slide-in-left">
+      <ShowWhenInView style="fade-in">
         <SideBanner className={styles["browser-banner"]} side="left">
           <h5 className={styles["browser-title"]}>
             You can use every browser to access the database!
@@ -61,13 +61,13 @@ const Product: React.FC = () => {
       <ShowWhenInView style="fade-in">
         <div className={styles.steps}>
           <div className={styles.description}>
-            <h5>Easy as 1, 2 3</h5>
+            <h5>Easy as 1, 2, 3</h5>
             <p>
               We have taken it upon ourselves to make sure that our product can
               be used in every clinic, without any IT-security risks or worries
               about integration.
             </p>
-            <p>It&#39;s as easy as a Google search..</p>
+            <p>It&#39;s as easy as a Google search.</p>
             <Button
               onClick={() => {
                 window.location.href = "/#contact";
@@ -78,7 +78,7 @@ const Product: React.FC = () => {
               <Image src="/send.png" height={20} width={20} alt="contact" />
             </Button>
           </div>
-          <ShowWhenInView style="slide-in-right">
+          {/* <ShowWhenInView style="slide-in-right"> */}
             <SideBanner side="right">
               <ol>
                 <li>Log-in using your favorite browser</li>
@@ -86,7 +86,7 @@ const Product: React.FC = () => {
                 <li>Find relevant MRI-safety information</li>
               </ol>
             </SideBanner>
-          </ShowWhenInView>
+          {/* </ShowWhenInView> */}
         </div>
       </ShowWhenInView>
       <div id="company" className={styles.why}>
