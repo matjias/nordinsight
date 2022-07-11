@@ -39,8 +39,9 @@
 .partners .partnerlogo:nth-child(2) {
   flex-grow: 2;
 } */
-.partnerlogo:nth-child(1) {
-  transform: translateY(-1.5px);
+
+.partnerlogo:nth-child(2) {
+  transform: translateY(3px);
 }
 .partnerlogo:nth-child(3) {
   flex-shrink: 2;

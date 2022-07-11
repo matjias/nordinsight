@@ -42,7 +42,7 @@ const Landing: React.FC = () => {
           <h6>Partners: </h6>
           <div className={styles.logos}>
             <div className={styles.partnerlogo}>
-              <Image src="/inno.svg" width={300} height={34} alt="Future" />
+              <Image src="/innofound.svg" width={300} height={45} alt="Future" />
             </div>
             <div className={styles.partnerlogo}>
               <Image src="/nhl.svg" width={260} height={80} alt="Future" />
