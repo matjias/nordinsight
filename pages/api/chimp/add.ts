@@ -1,8 +1,8 @@
-import { config, sendMail } from "../../../lib/mail";
 import type { NextApiRequest, NextApiResponse } from "next";
+import { addSubscriber } from "../../../lib/mailchimp";
 
 type Data = {
-  status: number;
+  id: string;
 };
 
 export default async function handler(
@@ -10,10 +10,7 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   if (req.method === "POST") {
-    config();
-    console.log(req.body);
-    const info = await sendMail(req.body);
-    console.log(info);
+    const id = await addSubscriber(req.body.email);
+    res.json({ id });
   }
-  res.json({ status: 200 });
 }
