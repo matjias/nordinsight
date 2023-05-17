@@ -31,7 +31,7 @@ const Landing: React.FC = () => {
 
         <Button
           onClick={() => {
-            setShowNewsletter(true);
+            window.location.href = "https://db.nordradiology.com";
           }}
           type={ButtonType.primary}
         >
