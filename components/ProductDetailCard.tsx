@@ -15,7 +15,7 @@ const ProductDetailCard: React.FC<ProductDetailCardProps> = ({
   return (
     <div className={styles.wrapper}>
       <div className={styles.title}>
-        <Image src={imgUrl} alt="icon" width={48} height={48} />
+        <Image src={imgUrl} alt="icon" width={36} height={36} />
         <h5>{title}</h5>
       </div>
       <hr />

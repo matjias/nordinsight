@@ -18,36 +18,26 @@ const ProductDetails: React.FC = () => {
 
           <div className={styles.cards}>
             <ProductDetailCard
-              title="Immediate Implementation"
+              title="Hassle-free setup"
               imgUrl="/icon1.png"
-              text="Hassle-free Setup: Initiate your hospital's access with just an email. No intricate installations or configurations. 
-
-              Empower Your Team: Once set up, your hospital admin can seamlessly add team members, ensuring everyone is onboarded and ready to go."
+              text="Initiate your hospital's access with just an email. No intricate installations or configurations. "
             />
 
             <ProductDetailCard
-              title="Onboarding Experience"
+              title="Navigate with Ease"
               imgUrl="/icon2.png"
-              text="Navigate with Ease: Our platform operates similarly to familiar search engines like Google, making it intuitive for anyone to use.
-
-            rials to guide you, ensuring you're making the most of what we offer."
+              text="Our platform operates similarly to search engines like Google,  making it user-friendly."
             />
 
             <ProductDetailCard
-              title="No Integration Hassles"
+              title="Access our Platform"
               imgUrl="/icon3.png"
-              text="Access our platform: directly through any web browser. 
-              No need for intricate system integrations or software installations. 
-              
-              It's standalone efficiency at its best, ensuring your team can focus on patient care rather than technicalities."
+              text="No need for intricate system integrations or software installations. "
             />
             <ProductDetailCard
               title="Unmatched Reliability"
               imgUrl="/icon3.png"
-              text="Experience peace of mind with NordInsight's 99.99% uptime. 
-              Clear Cost Benefits with NordInsight
-              
-              Immediate Savings: A department of 20 radiographers saves around 20 hours every week, directly translating to monetary benefits."
+              text="Experience peace of mind with NordInsight's 99.99% uptime. Clear Cost Benefits with NordInsight"
             />
           </div>
         </ShowWhenInView>
