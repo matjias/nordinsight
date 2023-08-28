@@ -1,82 +1,79 @@
-import React, { useState } from "react";
-import styles from "./newsletter.module.css";
-import MessageSent from "./message-sent";
-import Button, { ButtonType } from "./general/Button";
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from 'react'
+import styles from './newsletter.module.css'
+import MessageSent from './message-sent'
+import Button, { ButtonType } from './general/Button'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 interface SubscriberData {
-  name: string;
-  email: string;
-  hospital: string;
+  name: string
+  email: string
+  hospital: string
 }
 
 const Newsletter = () => {
   const [formData, setFormData] = useState<SubscriberData>({
-    name: "",
-    email: "",
-    hospital: "",
-  });
-  const [isSent, setIsSent] = useState<boolean>(false);
-  const [emailSubmitted, setEmailSubmitted] = useState<boolean>(false);
+    name: '',
+    email: '',
+    hospital: '',
+  })
+  const [isSent, setIsSent] = useState<boolean>(false)
+  const [emailSubmitted, setEmailSubmitted] = useState<boolean>(false)
 
-  const [subId, setSubId] = useState("");
+  const [subId, setSubId] = useState('')
 
   const updateFormData = ({ target }) => {
-    setFormData({ ...formData, [target.name]: target.value });
-  };
+    setFormData({ ...formData, [target.name]: target.value })
+  }
 
   const submitInfo = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    const res = await fetch("/api/chimp/update", {
-      method: "POST",
+    const res = await fetch('/api/chimp/update', {
+      method: 'POST',
       body: JSON.stringify({ id: subId, ...formData }),
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
-    });
-    const id = (await res.json()).id;
+    })
+    const id = (await res.json()).id
 
-    setEmailSubmitted(false);
-    setIsSent(true);
-  };
+    setEmailSubmitted(false)
+    setIsSent(true)
+  }
 
   const submitEmail = async (e) => {
-    setEmailSubmitted(true);
-    const res = await fetch("/api/chimp/add", {
-      method: "POST",
+    setEmailSubmitted(true)
+    const res = await fetch('/api/chimp/add', {
+      method: 'POST',
       body: JSON.stringify(formData),
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
-    });
-    const id = (await res.json()).id;
+    })
+    const id = (await res.json()).id
 
-    setSubId(id);
-  };
+    setSubId(id)
+  }
 
   return (
     <div className={styles.wrapper}>
-      <h5>Not a member yet? Join our newsletter</h5>
       {/* <p>
         Sign up for our newsletter to be one of the first to get access, when we
         launh for the public.
       </p> */}
-      <div className={styles.email}>
+      <div className={styles.input_wrapper}>
         <input
           className={styles.emailinput}
           required
           onChange={updateFormData}
           autoComplete="none"
           name="email"
-          placeholder="Enter your email address"
+          placeholder="Enter your email to join our Newsletter"
           type="email"
         />
-        <Button onClick={submitEmail} type={ButtonType.submit}>
+        <Button onClick={submitEmail} type={ButtonType.submit} small>
           <span>Subscribe</span>
-          <Image src="/right-arrow 4.svg" height={20} width={20} />
         </Button>
       </div>
       {/* {isSent && <MessageSent name={formData.name} />} */}
@@ -111,7 +108,7 @@ const Newsletter = () => {
                 />
               </div>
               <div className={styles.submitbtn}>
-                <Button type={ButtonType.submit} onClick={submitInfo}>
+                <Button type={ButtonType.submit} onClick={submitInfo} small>
                   Submit
                 </Button>
               </div>
@@ -120,7 +117,7 @@ const Newsletter = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Newsletter;
+export default Newsletter

@@ -1,49 +1,50 @@
-import React, { useState } from "react";
-import styles from "../styles/Contact.module.css";
-import MessageSent from "./message-sent";
+import React, { useState } from 'react'
+import styles from '../styles/Contact.module.css'
+import MessageSent from './message-sent'
+
 interface FormData {
-  firstname: string;
-  lastname: string;
-  email: string;
-  role: string;
-  message: string;
+  firstname: string
+  lastname: string
+  email: string
+  role: string
+  message: string
 }
 
 const Contact = () => {
   const [formData, setFormData] = useState<FormData>({
-    firstname: "",
-    lastname: "",
-    email: "",
-    role: "",
-    message: "",
-  });
-  const [isSent, setIsSent] = useState<boolean>(false);
+    firstname: '',
+    lastname: '',
+    email: '',
+    role: '',
+    message: '',
+  })
+  const [isSent, setIsSent] = useState<boolean>(false)
 
   const updateFormData = ({ target }) => {
-    setFormData({ ...formData, [target.name]: target.value });
-  };
+    setFormData({ ...formData, [target.name]: target.value })
+  }
 
   const send = async (e) => {
-    e.preventDefault();
-    console.log(formData);
+    e.preventDefault()
+    console.log(formData)
     const mailData = {
-      sender: formData.firstname + " " + formData.lastname,
+      sender: formData.firstname + ' ' + formData.lastname,
       senderMail: formData.email,
-      recipients: ["info@nordinsight.com"],
+      recipients: ['info@nordinsight.com'],
       subject: `Message from ${formData.role} ${
-        formData.firstname + " " + formData.lastname
+        formData.firstname + ' ' + formData.lastname
       }`,
       body: formData.message,
-    };
-    const res = await fetch("/api/mail/send", {
-      method: "POST",
+    }
+    const res = await fetch('/api/mail/send', {
+      method: 'POST',
       body: JSON.stringify(mailData),
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
-    });
-    setIsSent(true);
-  };
+    })
+    setIsSent(true)
+  }
 
   return (
     <div className={styles.wrapper}>
@@ -53,8 +54,8 @@ const Contact = () => {
         <React.Fragment>
           <h3>Get in touch</h3>
           <p>
-            Are you interested in learning more or want to collaborate? We&apos;d
-            love to hear from you! Contact us on{" "}
+            Are you interested in learning more or want to collaborate?
+            We&apos;d love to hear from you! Contact us on{' '}
             <a href="mailto:info@nordinsight.com">info@nordinsight.com</a> or
             through the form below.
           </p>
@@ -147,7 +148,7 @@ const Contact = () => {
         </React.Fragment>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

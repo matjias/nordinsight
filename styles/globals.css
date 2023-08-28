@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @value --gradient-color: linear-gradient(
     110deg,
@@ -9,69 +10,40 @@
 :root {
   --dark-grey: #111111;
   --main-grey: #212121;
-  --light-grey: #2a2a2a;
-  --bright-grey: #404040;
+  --grey-background: rgba(68, 68, 68, 0.8);
+  --grey-text: #808080;
+  --grey-border: #545454;
   --main-white: #eee;
-  --main-red: #ff8181;
-  --main-blue: #4ea5d9;
-  --nav-icon-size: 20px;
-  --nav-spacing: 20px;
-  --nav-width: 250px;
+  --main-blue: #1698e7;
   --top-margin: 30px;
   --bottom-margin: 50px;
-  --blue-grad: linear-gradient(
-    110deg,
-    rgba(90, 205, 205, 1) 0%,
-    rgba(150, 205, 255, 1) 100%
-  );
+  --animation-speed: 30s;
+  --section-margin: 60px auto;
 }
+/* Reset and Box Model */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
-  font-size: 100%;
-  background: #2a2a2a;
-  color: #eee;
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-h1 {
-  margin: 0;
-  font-weight: 500;
-  font-size: calc(0.5rem + 5.5vw);
-}
-
-h2 {
-  font-weight: 400;
-  margin: 40px 0;
-  font-size: calc(2rem + 2.5vw);
-}
-
-h3 {
-  margin: 40px 0;
-  font-weight: 200;
-  font-size: calc(1.2rem + 2vw);
-}
-h4 {
-  margin: 40px 0;
-  font-weight: 500;
-  font-size: calc(1.5rem + 1vw);
-}
-h5 {
-  margin: 20px 0;
-  font-weight: 500;
-  font-size: calc(0.7rem + 1vw);
-}
-h6 {
-  opacity: 0.7;
-  margin: 20px 0;
-  font-weight: 300;
-  font-size: 1rem;
-}
-p {
-  margin: 20px 0;
-  font-weight: 200;
-  font-size: calc(1rem + 0.3vw);
+  font-size: 100%; /* 16px */
+  color: var(--main-white);
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: 'clig' 0, 'liga' 0;
+  background: linear-gradient(
+    180deg,
+    #00101e 18.7%,
+    #306e90 57.29%,
+    #021625 100%
+  );
+  /*
+  SHOULD BE THIS, BUT IT'S UGLY
+  background: linear-gradient(180deg, #00101E 22.70%, #306E90 57.29%, #021625 100%);
+  background-attachment: fixed;
+  */
 }
 
 a {
@@ -79,16 +51,82 @@ a {
   text-decoration: none;
 }
 
+/* Typography */
+h1 {
+  font-weight: 300;
+  font-size: calc(
+    1rem + 5.5vw
+  ); /* Base 16px + dynamic growth up to 5.5% of viewport width */
+  line-height: 112px;
+  letter-spacing: -1.5px;
+  font-feature-settings: 'clig' off, 'liga' off;
+}
+
+h2 {
+  font-weight: 300;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: calc(
+    1.5rem + 2.25vw
+  ); /* Base 24px + dynamic growth up to 2.25% of viewport width */
+  line-height: 120%;
+  letter-spacing: -0.03125rem;
+  margin: 30px auto;
+}
+
+h3 {
+  margin: 30px auto;
+  font-size: calc(
+    1rem + 2vw
+  ); /* Base 16px + dynamic growth up to 2% of viewport width */
+  text-align: center;
+  font-weight: 400;
+  line-height: 116%; 
+}
+
+h4 {
+  margin: 20px 0;
+  font-weight: 400;
+  font-size: calc(
+    1.25rem + 1.5vw
+  ); /* Base 20px + dynamic growth up to 1.5% of viewport width */
+  line-height: 2.25rem;
+}
+
+h5 {
+  margin: 20px 0;
+  font-size: calc(
+    1rem + 1vw
+  ); /* Base 16px + dynamic growth up to 1% of viewport width */
+  font-weight: 400;
+  line-height: 2rem; /* 100% */
+  letter-spacing: 0.01125rem;
+}
+
+
+h6 {
+  margin: 20px 0;
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: calc(
+    0.8rem + 0.5vw
+  ); /* Base 12.8px + dynamic growth up to 0.5% of viewport width */
+}
+
+p {
+  margin: 20px 0;
+  font-weight: 200;
+  font-size: calc(
+    0.9rem + 0.5vw
+  ); /* Base 14.4px + dynamic growth up to 0.5% of viewport width */
+}
+
 em {
   font-style: normal;
   background: var(--blue-grad);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-* {
-  box-sizing: border-box;
-}
 input:focus,
 select:focus,
 textarea:focus,

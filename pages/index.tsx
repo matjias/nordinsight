@@ -1,19 +1,25 @@
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
-import Navigation from "../components/navigation";
-import Landing from "../components/landing";
-import Team from "../components/team";
-import Contact from "../components/contact";
+import NavBar from "../components/Navbar";
 import Footer from "../components/footer";
-import Product from "../components/product";
+import Hero from "../components/Hero";
+import Features from "../components/Features";
+import ProductDetails from "../components/ProductDetails";
+import Partners from "../components/Partners";
+import RiskGuarantee from "../components/RiskGuarantee";
+import Testimonials from "../components/Testimonials";
+import ContactModal from "../components/ContactModal";
+import { useState } from "react";
 
 const Home: React.FC= () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!isModalOpen);
+  };
 
   return (
     <div className={styles.container}>
-      {/* <Background className={styles.bgtop} />
-      <div className={styles.bgwave}>
-      </div> */}
       <Head>
         <title>NordInsight - Improving MRI safety through data</title>
         <meta name="description" content="The only implant database radiologists and radiographers
@@ -21,29 +27,27 @@ const Home: React.FC= () => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       </Head>
-      <section className={styles.slide}>
-        <Navigation />
-        <Landing />
+      <NavBar openModal={toggleModal} />
+      <section>
+        <Hero />
       </section>
-      <section id='mision' className={styles.slide}>
-        <Product />
+      <section>
+        <Features />
       </section>
-      <section id='team' className={styles.slide}>
-        <Team />
+      <section>
+        <Testimonials />
       </section>
-      <section id='contact' className={styles.slide}>
-        <Contact />
+      <section>
+        <Partners />
       </section>
-      {/* <section id='mision' className={styles.slide}>
-        <Mission />
+      <section>
+        <ProductDetails />
       </section>
-      <section id='products' className={styles.slide}>
-        <Products />
+      <section>
+        <RiskGuarantee openModal={toggleModal}/>
       </section>
-      
-       */}
-        <Footer />
-      {/* <Background className={styles.bgbottom} /> */}
+      <Footer/>
+      <ContactModal isOpen={isModalOpen} onClose={toggleModal} />
     </div>
   );
 };

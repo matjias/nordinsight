@@ -1,0 +1,18 @@
+.wrapper {
+  width: 75%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.wrapper h3 {
+  max-width: 80%;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  
+    .wrapper h3 {
+        max-width: 100%;
+      }
+
+  }

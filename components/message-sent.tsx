@@ -6,7 +6,7 @@ const MessageSent: React.FC<{name: string}> = ({name}) => {
         <div className={styles.wrapper}>
             <div className={styles.messageicon}>
             <Image
-                src="/check-mark.png"
+                src="/message_sent.png"
                 width={1000}
                 height={1000}
                 alt="Future"

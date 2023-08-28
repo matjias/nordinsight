@@ -1,9 +1,11 @@
 .wrapper {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  padding: 9px 12px;
   align-items: center;
-  margin: 50px 0;
+  justify-content: center;
+  gap: 55px;
+  border-radius: 34px;
+  background: rgba(68, 68, 68, 0.80);
 }
 .hide {
   display: none;
@@ -24,7 +26,7 @@
 }
 .item {
   display: block;
-  padding: 15px 20px;
+  padding: 0;
   font-weight: 200;
   margin: 15px;
   position: relative;
@@ -62,7 +64,7 @@
   height: 100%;
 }
 .logo {
-  max-width: 300px;
+  max-width: 200px;
 }
 .contact {
   font-weight: 400;

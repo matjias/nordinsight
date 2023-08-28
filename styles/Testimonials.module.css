@@ -1,0 +1,12 @@
+.wrapper {
+    width: 75%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px; 
+  }
