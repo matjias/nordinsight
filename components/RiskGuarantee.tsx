@@ -14,12 +14,8 @@ const RiskGuarantee: React.FC<{ openModal: () => void }> = ({ openModal }) => {
           free additional month of access. If you&apos;re still not satisfied,
           receive a full refund.
         </p>
-        <Button onClick={openModal} type={ButtonType.contact}>
-          Contact us{' '}
-          <FontAwesomeIcon
-            icon={faArrowRight}
-            style={{ width: '24px', height: '24px' }}
-          />
+        <Button onClick={openModal} type={ButtonType.secondary}>
+          Contact us
         </Button>
       </div>
     </div>

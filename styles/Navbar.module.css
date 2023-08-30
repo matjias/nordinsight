@@ -49,6 +49,11 @@
     color: white
 }
 
+.item.active {
+  font-weight: 700; 
+}
+
+
 .item:after {
     border-radius: 25px;
     display: block;

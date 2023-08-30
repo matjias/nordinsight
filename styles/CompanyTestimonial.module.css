@@ -1,0 +1,25 @@
+
+.wrapper {
+    width: 75%;
+    margin: 60px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.wrapper h4 {
+    margin: 0;
+    font-size: 34px;
+}
+
+.card {
+max-width: 716px;
+padding: 29px 35px 29px 33px;
+border-radius: 15px;
+border: 1px solid #535353;
+background: #123848;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
+
+}

@@ -17,10 +17,10 @@
 }
 
 .hero {
-  width: 33.4375rem;
+  width: 34.4375rem;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 30px;
 }
 
 .hero h5 {
@@ -42,7 +42,7 @@
 .hero p {
   font-size: 16px;
   line-height: 24px; /* 150% */
-  margin: 0 0 53px 0;
+  margin: 0;
 }
 
 /* Media queries for smaller screens */

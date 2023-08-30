@@ -1,7 +1,5 @@
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
-import NavBar from "../components/Navbar";
-import Footer from "../components/footer";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
 import ProductDetails from "../components/ProductDetails";
@@ -10,6 +8,7 @@ import RiskGuarantee from "../components/RiskGuarantee";
 import Testimonials from "../components/Testimonials";
 import ContactModal from "../components/ContactModal";
 import { useState } from "react";
+import Layout from "../components/general/Layout";
 
 const Home: React.FC= () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -27,9 +26,9 @@ const Home: React.FC= () => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       </Head>
-      <NavBar openModal={toggleModal} />
+      <Layout>
       <section>
-        <Hero />
+        <Hero  heading="The Future of Implant Safety in MRI Scanning" paragraph="Navigating the MRI safety labyrinth? Say goodbye to countless hours lost and discover the way forward with NordInsight's comprehensive implant library."/>
       </section>
       <section>
         <Features />
@@ -38,7 +37,7 @@ const Home: React.FC= () => {
         <Testimonials />
       </section>
       <section>
-        <Partners />
+        <Partners heading="Join the many hospitals optimizing their MRI procedures with NordInsight. "/>
       </section>
       <section>
         <ProductDetails />
@@ -46,8 +45,8 @@ const Home: React.FC= () => {
       <section>
         <RiskGuarantee openModal={toggleModal}/>
       </section>
-      <Footer/>
       <ContactModal isOpen={isModalOpen} onClose={toggleModal} />
+      </Layout>
     </div>
   );
 };

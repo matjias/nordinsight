@@ -1,10 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import styles from './Button.module.css'
 
 export enum ButtonType {
   primary = 'primary',
   cancel = 'cancel',
   submit = 'submit',
-  contact = 'contact',
+  secondary = 'secondary',
 }
 
 const Button: React.FC<{
@@ -26,6 +28,14 @@ const Button: React.FC<{
       onClick={(e) => onClick(e, value)}
     >
       {children}
+      {type === ButtonType.secondary && (
+        <>
+          <FontAwesomeIcon
+            icon={faArrowRight}
+            style={{ width: '16px', height: '16px' }}
+          />
+        </>
+      )}
     </div>
   )
 }

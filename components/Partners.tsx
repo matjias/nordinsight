@@ -1,14 +1,16 @@
 import Image from 'next/image'
-
 import styles from '../styles/Partners.module.css'
 
-const Partners: React.FC = () => {
+interface PartnersProps {
+  heading: string
+}
+
+const Partners: React.FC<PartnersProps> = ({ heading }) => {
   return (
     <div className={styles.background}>
       <div className={styles.wrapper}>
         <h5>
-          Join the many hospitals optimizing their MRI procedures with
-          NordInsight.{' '}
+          {heading}
         </h5>
         <div className={styles.slider}>
           <div className={styles.slide_track}>

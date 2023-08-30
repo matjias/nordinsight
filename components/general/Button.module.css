@@ -8,23 +8,15 @@
   align-items: center;
   gap: 0.625rem; /* 10px */
   font-size: 0.875rem; /* 14px */
-}
-
-/* Button Sizes */
-.all {
   padding: 0.9375rem 1.875rem; /* 15px 30px */
   border-radius: 2.375rem; /* 38px */
-  width: 21.75rem; /* 348px */
-  height: 4rem; /* 64px */
+  box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .small {
-  font-size: 0.875rem; /* 14px */
-  padding: 0.9375rem 1.84375rem;
-  border-radius: 2.375rem; /* 38px */
-  box-shadow: 0.25rem 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.1);
-  width: 10.625rem; /* 170px */
+  max-width: 180px; 
 }
+
 
 /* Button Colors/Styles */
 .primary,
@@ -33,7 +25,6 @@
   color: var(--main-white);
   background: var(--main-blue);
   border: 0.125rem solid var(--main-blue); /* 2px */
-  max-width: 21.75rem; /* 348px */
 }
 .primary:hover,
 .submit:hover {
@@ -54,16 +45,17 @@
   background: transparent;
 }
 
-.contact {
+.secondary {
   background: none;
   border: none;
   color: var(--main-blue);
-  font-size: 19px;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
   line-height: 24px;
   box-shadow: none;
-}
+  padding: 0.9375rem 0;
 
+}
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {

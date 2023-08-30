@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styles from './newsletter.module.css'
-import MessageSent from './message-sent'
 import Button, { ButtonType } from './general/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'

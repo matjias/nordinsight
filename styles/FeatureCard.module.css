@@ -22,10 +22,21 @@
     order: 0;
 }
 
+.large .text {
+    font-size: 24px;
+
+}
+
+.wrapper h5 {
+    margin: 0;
+}
+
 .info {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    max-width: 45%;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .img {
@@ -33,14 +44,18 @@
     overflow: hidden;
     background: lightgray;
     margin: 0;
+    max-width: 460px;
+    max-height: 352px;
+    object-fit: cover;
 
 }
 
 .text {
     color: var(--main-white);
-    font-size: 1.1875rem; /* 19px */
+    font-size: 19px;
     font-weight: 300;
-    line-height: 1.5rem; /* 24px */
+    line-height: 133%; /* 24px */
+    margin: 0;
 }
 
 
