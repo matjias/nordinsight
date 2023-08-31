@@ -6,18 +6,13 @@ const CTA: React.FC = () => {
   return (
     <div className={styles.background}>
       <div className={styles.wrapper}>
-        <h2>
-          MRI scans come with a slew of risks. Together, we can reduce them.
-        </h2>
+        <h3>Join Our Newsletter to know....</h3>
+        <p>
+          At NordInsight, we understand the value of time, especially in the
+          healthcare sector. That&#39;s why we&#39;ve optimized our platform for
+          instant access and ease of use.
+        </p>
         <Newsletter />
-        <div>
-          <Image
-            src="/platform.png"
-            alt="product-preview"
-            width={1084}
-            height={540}
-          />
-        </div>
       </div>
     </div>
   )

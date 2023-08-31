@@ -1,7 +1,5 @@
-.wrapper {
-    width: 75%;
-    max-width: 1200px;
-    margin: 60px auto;
+.wrapper h1{
+    margin: var(--heading-margin);
 }
 
 .cards {

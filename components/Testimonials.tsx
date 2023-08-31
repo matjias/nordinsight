@@ -4,7 +4,7 @@ import TestimonialCard from './TestimonialCard'
 const Testimonials: React.FC = () => {
   return (
     <div className={styles.wrapper}>
-      <h2>Real Stories from Hospitals Like Yours</h2>
+      <h1>Real Stories from Hospitals Like Yours</h1>
 
       <div className={styles.cards}>
         <TestimonialCard

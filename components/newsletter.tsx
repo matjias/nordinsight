@@ -68,7 +68,7 @@ const Newsletter = () => {
           onChange={updateFormData}
           autoComplete="none"
           name="email"
-          placeholder="Enter your email to join our Newsletter"
+          placeholder="Enter your email address"
           type="email"
         />
         <Button onClick={submitEmail} type={ButtonType.submit} small>

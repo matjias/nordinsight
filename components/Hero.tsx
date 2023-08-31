@@ -1,22 +1,15 @@
 import styles from '../styles/Hero.module.css'
 import Button, { ButtonType } from './general/Button'
 
-interface HeroProps {
-  heading: string;
-  paragraph?: string;
-  customStyle?: React.CSSProperties;
-  
-}
-
-const Hero: React.FC<HeroProps> = ({ heading, paragraph, customStyle }) => {
+const Hero: React.FC = () => {
   return (
     <div className={styles.background}>
-        <div className={styles.wrapper}>
-          <div style={customStyle} className={styles.hero}>
-            <h5>NORDINSIGHT</h5>
-            <h3>{heading}</h3>
-            {paragraph && <p>{paragraph}</p>}
-            <Button
+      <div className={styles.wrapper}>
+        <div className={styles.hero}>
+          <h5>NORDINSIGHT</h5>
+          <h2>The Future of Implant Safety in MRI Scanning</h2>
+          <p>Navigating the MRI safety labyrinth? Say goodbye to countless hours lost and discover the way forward with NordInsight&apos;s comprehensive implant library.</p>
+          <Button
             small
             onClick={() => {
               window.location.href = 'https://db.nordradiology.com'
@@ -25,8 +18,8 @@ const Hero: React.FC<HeroProps> = ({ heading, paragraph, customStyle }) => {
           >
             <span>Go to platform</span>
           </Button>
-          </div>
         </div>
+      </div>
     </div>
   )
 }

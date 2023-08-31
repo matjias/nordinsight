@@ -1,0 +1,9 @@
+.wrapper {
+  width: 55%;
+  max-width: 900px;
+  margin: 35vh auto;
+}
+
+.wrapper h2 {
+  margin: var(--heading-margin);
+}

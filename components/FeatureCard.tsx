@@ -29,7 +29,7 @@ const FeatureCard: React.FC<CardProps> = ({
         <Image src={imgUrl} alt="product-image" width={460} height={352} />
       </div>
       <div className={styles.info}>
-        {title && <h5>{title}</h5>}
+        {title && <h3>{title}</h3>}
         <p className={styles.text}>{text}</p>
         {buttonTitle && onClickFunction && (
           <Button type={ButtonType.secondary} onClick={onClickFunction}>

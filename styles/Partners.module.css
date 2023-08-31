@@ -4,16 +4,11 @@
 }
 
 .wrapper {
-    width: 75%;
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 1.875rem 0; /* 30px */
     text-align: center;
 }
 
 .wrapper h5 {
     max-width: 70%;
-    margin: 30px auto;
 }
 
 .slider {

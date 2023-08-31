@@ -9,9 +9,9 @@ const Partners: React.FC<PartnersProps> = ({ heading }) => {
   return (
     <div className={styles.background}>
       <div className={styles.wrapper}>
-        <h5>
+        <h4>
           {heading}
-        </h5>
+        </h4>
         <div className={styles.slider}>
           <div className={styles.slide_track}>
             <div className={styles.slider}>

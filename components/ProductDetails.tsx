@@ -5,7 +5,7 @@ const ProductDetails: React.FC = () => {
   return (
     <div className={styles.background}>
       <div className={styles.wrapper}>
-        <h3>Swift Onboarding & Implementation</h3>
+        <h2>Swift Onboarding & Implementation</h2>
         <p className={styles.subtitle}>
           At NordInsight, we understand the value of time, especially in the
           healthcare sector. That&apos;s why we&apos;ve optimized our platform

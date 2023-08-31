@@ -18,21 +18,11 @@ const Team: React.FC = () => {
   }
 
   return (
-    <div className={styles.wrapper} id="#team">
-      <h3>Hey, let&#39;s solve MRI-safety together!</h3>
+    <div className={styles.wrapper}>
+      <h1>Hey, let&#39;s solve MRI-safety together!</h1>
       <div className={styles.profiles}>
-        <div>
-          <Profile info={simonInfo} />
-        </div>
-        <div>
-          <Profile info={mathiasInfo} />
-        </div>
-        <div>
-          <Profile info={mathiasInfo} />
-        </div>
-        <div>
-          <Profile info={simonInfo} />
-        </div>
+        <Profile info={simonInfo} />
+        <Profile info={mathiasInfo} />
       </div>
     </div>
   )

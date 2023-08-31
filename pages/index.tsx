@@ -9,6 +9,7 @@ import Testimonials from "../components/Testimonials";
 import ContactModal from "../components/ContactModal";
 import { useState } from "react";
 import Layout from "../components/general/Layout";
+import CTA from "../components/CTA";
 
 const Home: React.FC= () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -28,10 +29,14 @@ const Home: React.FC= () => {
       </Head>
       <Layout>
       <section>
-        <Hero  heading="The Future of Implant Safety in MRI Scanning" paragraph="Navigating the MRI safety labyrinth? Say goodbye to countless hours lost and discover the way forward with NordInsight's comprehensive implant library."/>
+        <Hero />
       </section>
+      <div className={styles.content}>
       <section>
         <Features />
+      </section>
+      <section>
+        <CTA/>
       </section>
       <section>
         <Testimonials />
@@ -45,6 +50,7 @@ const Home: React.FC= () => {
       <section>
         <RiskGuarantee openModal={toggleModal}/>
       </section>
+      </div>
       <ContactModal isOpen={isModalOpen} onClose={toggleModal} />
       </Layout>
     </div>

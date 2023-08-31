@@ -5,7 +5,7 @@ const Features: React.FC = () => {
   return (
     <div className={styles.background}>
       <div className={styles.wrapper}>
-        <h3>Ready to Revolutionize Your MRI Safety Operations?</h3>
+        <h2>Ready to Revolutionize Your MRI Safety Operations?</h2>
         <FeatureCard
           title="Conditional Finder for Implants"
           layout="left"

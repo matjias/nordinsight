@@ -1,19 +1,22 @@
-
 .wrapper {
-    width: 75%;
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 60px auto;
     text-align: center;
 }
 
 .arrow {
-    font-size: 20px;
-  }
+    font-size: 1.25rem; /* 20px */
+}
 
+.wrapper h2 {
+    margin: var(--heading-margin);
+}
+
+.wrapper p {
+    margin-bottom: 1.5rem; /* 24px */
+}
 
 
 

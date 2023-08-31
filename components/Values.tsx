@@ -13,7 +13,7 @@ const Values: React.FC<{ openModal: () => void }> = ({ openModal }) => {
 
   return (
     <div className={styles.wrapper}>
-      <h3>Towards a Safer MRI Future</h3>
+      <h1>Towards a Safer MRI Future</h1>
       <FeatureCard
         layout="left"
         buttonTitle="Get to know us"

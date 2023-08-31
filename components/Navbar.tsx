@@ -36,9 +36,9 @@ const NavBar: React.FC<{ openModal: () => void }> = ({ openModal }) => {
             Company
           </a>
         </Link>
-        <Link href={'#team'}>
+        <Link href={'/'}>
           <a onClick={toggleMenu} className={styles.item}>
-            Team
+            Community
           </a>
         </Link>
         <Button className={styles.button} small onClick={openModal} type={ButtonType.primary}>

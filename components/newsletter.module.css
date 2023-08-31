@@ -17,14 +17,14 @@
 .input_wrapper {
   display: flex;
   width: 100%;
-  max-width: 34rem; /* 544px */
+  max-width: 25rem; 
   padding: 0.75rem 0.5625rem 0.75rem 1.6875rem; /* 12px 9px 12px 27px */
   justify-content: space-between;
   align-items: center;
   border-radius: 2.375rem; /* 38px */
   background: rgba(187, 187, 187, 0.25);
   height: 4.0625rem; /* 65px */
-  margin: 3.75rem auto; /* 60px 0 */
+  margin: 0 auto; 
 }
 
 .input_wrapper input::placeholder {
