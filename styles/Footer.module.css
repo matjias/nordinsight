@@ -1,16 +1,31 @@
-.container {
+.footer {
   width: 75%;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 3.75rem 0; /* 60px */
+  padding: 50px 0 100px 0;
 }
 
-.footer-wrapper {
+.lineContainer {
   display: flex;
-  justify-content: space-evenly;
-  gap: 6.25rem; /* 100px */
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.container {
   margin: 0 auto;
-  align-items: flex-end; 
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.logoContainer {
+  margin-bottom: 40px;
+}
+
+.column {
+  flex: 1;
 }
 
 .link {
@@ -18,61 +33,50 @@
   text-decoration-line: underline;
 }
 
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3.75rem 0; /* 60px */
+.linkedin-icon {
+  margin-bottom: 10px;
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.info {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .copyright {
   color: var(--grey-text);
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 500;
-  line-height: 1rem; /* 16px */
+  line-height: 1rem;
 }
 
-.flexible-container {
-  flex: 1;
-}
-
-.flexible-container .info:first-child,
-.contact .info:first-child {
-  margin-top: 0;
-}
-
-.flexible-container .info:last-child,
-.contact .info:last-child {
-  margin-bottom: 0;
-}
-
-.contact {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.linkedin-icon {
-  filter: invert(1);
-  width: 1.875rem; /* 30px */
-  cursor: pointer;
-}
-
-.info {
-  margin: 1.5rem 0;
-  color: var(--main-white);
+.cvr {
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.25rem; /* 20px */
+  line-height: 1.25rem;
 }
 
-/* Media queries */
+/* Responsive adjustments */
 @media only screen and (max-width: 821px) {
-  .footer-wrapper {
+  .container {
     flex-direction: column;
-    gap: 1.25rem; /* 20px */
+    align-items: center;
   }
-  .footer-wrapper > * {
-    margin-bottom: 0.8rem; /* 12.8px */
+
+  .column {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .linkedin-icon {
+    justify-content: center;
+  }
+
+  .logoContainer {
+    display: flex;
+    justify-content: center;
   }
 }

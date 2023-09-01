@@ -21,3 +21,11 @@
 .transparent {
   background: none;
 }
+
+
+@media (max-width: 768px) {
+  .content section {
+    margin: 2rem 0; /* 90px */
+  }
+
+}
