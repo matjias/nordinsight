@@ -24,6 +24,7 @@
   color: var(--main-white);
   background: var(--main-blue);
   border: 0.125rem solid var(--main-blue); /* 2px */
+  transition: transform 0.2s ease-in-out;
 }
 .primary:hover,
 .submit:hover {
@@ -35,6 +36,11 @@
 .primary:focus,
 .submit:focus {
   border: transparent;
+}
+
+.primary:active,
+.submit:active {
+  transform: scale(0.95);
 }
 
 .cancel {

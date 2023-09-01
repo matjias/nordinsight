@@ -21,7 +21,7 @@
 }
 
 .logoContainer {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .column {
@@ -74,8 +74,4 @@
     justify-content: center;
   }
 
-  .logoContainer {
-    display: flex;
-    justify-content: center;
-  }
 }

@@ -8,7 +8,11 @@ const Footer = () => {
          <div className={styles.lineContainer}>
         <Image src="/gradient_line.svg" alt="gradient-line" width="1084" height="5" />
       </div>
-      <div className={styles.logoContainer}>
+  
+      <div className={styles.container}>
+        <div className={styles.column}>
+          <p className={styles.info}>
+          <div className={styles.logoContainer}>
         <Image
           src="/LogoHvidFinal.png"
           alt="nordinsight-logo"
@@ -16,10 +20,7 @@ const Footer = () => {
           height="30"
         />
       </div>
-      <div className={styles.container}>
-        <div className={styles.column}>
-          <p className={styles.info}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+      
             <span className={styles.link}>
               <Link href="/">Get to know our Platform</Link>
             </span>
