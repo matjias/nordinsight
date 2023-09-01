@@ -19,7 +19,7 @@ const CompanyTestimonial: React.FC<{ openModal: () => void }> = ({
           </Button>
         </div>
         <TestimonialCard
-          imgUrl="/"
+          imgUrl="/test_profile.jpg"
           text='"We waste countless hours and scanning slots (i.e. money), on searching for implant conditionality or safety on the internet. I am glad to have found NordInsight&rsquo;s platform. With their implant platform, researching MRI safety for our patients became a walk in the park!"'
           name="Samuel Oliviera"
           position="Head of Radiology"

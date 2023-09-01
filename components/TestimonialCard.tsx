@@ -15,7 +15,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({name, position, text, 
         <div className={styles.wrapper}>
             <div className={styles.heading}>
                 <div className={styles.image}>
-                <Image src={imgUrl} width={64} height={64} alt="profile-img"/>
+                <Image src={imgUrl} width={64} height={64} alt="profile-img" objectFit="cover"/>
                 </div>
                 <div className={styles.person_info}>
                     <p>{name}</p>
