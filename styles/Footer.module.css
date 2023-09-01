@@ -59,7 +59,6 @@
   line-height: 1.25rem;
 }
 
-/* Responsive adjustments */
 @media only screen and (max-width: 821px) {
   .container {
     flex-direction: column;
