@@ -26,7 +26,10 @@ const FeatureCard: React.FC<CardProps> = ({
       }`}
     >
       <div className={styles.img}>
-        <Image src={imgUrl} alt="product-image" width={460} height={352} />
+        <Image src={imgUrl} alt="product-image"     layout="responsive" 
+    objectFit="cover"
+    width={460} 
+    height={352} />
       </div>
       <div className={styles.info}>
         {title && <h3>{title}</h3>}

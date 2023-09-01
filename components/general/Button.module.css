@@ -14,9 +14,8 @@
 }
 
 .small {
-  max-width: 180px; 
+  max-width: 180px;
 }
-
 
 /* Button Colors/Styles */
 .primary,
@@ -53,8 +52,21 @@
   font-weight: 600;
   line-height: 24px;
   box-shadow: none;
-  padding: 0.9375rem 0;
+  padding: 0;
+}
 
+.secondary:hover {
+  color: #4DB2F0;
+}
+
+.secondary .faArrowRight {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+  margin-left: -5px;
+}
+
+.secondary:hover .faArrowRight {
+  transform: translateX(5px);
 }
 
 /* Media Queries */
@@ -74,5 +86,9 @@
   .primary,
   .submit {
     max-width: auto;
+  }
+
+  .secondary {
+    padding: 0;
   }
 }

@@ -31,6 +31,7 @@ const Button: React.FC<{
       {type === ButtonType.secondary && (
         <>
           <FontAwesomeIcon
+          className={styles.faArrowRight}
             icon={faArrowRight}
             style={{ width: '16px', height: '16px' }}
           />

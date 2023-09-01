@@ -6,8 +6,15 @@
   display: flex; 
   justify-content: space-between;
   margin: 0 auto;
-
+  gap: 2rem; 
 }
+
+@media only screen and (max-width: 768px) {
+  .profiles {
+    gap: 1rem;
+  }
+}
+
 
 
 

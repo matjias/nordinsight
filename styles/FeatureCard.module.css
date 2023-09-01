@@ -19,8 +19,9 @@
 }
 
 .large .text {
-    font-size: 1.5rem; /* 24px */
+    font-size: calc(0.8rem + 0.7vw); 
 }
+
 
 .wrapper h3 {
     margin: 0;
@@ -39,13 +40,13 @@
     overflow: hidden;
     background: lightgray;
     margin: 0;
-    max-width: 460px; 
-    max-height: 352px; 
-    object-fit: cover;
+    width: 50%; 
+    position: relative;
+    
 }
 
 /* Media queries */
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .wrapper {
         flex-direction: column;
     }
@@ -64,7 +65,7 @@
     }
 
     .img {
-        max-width: 100%;
+        width: 100%;
     }
 
 
