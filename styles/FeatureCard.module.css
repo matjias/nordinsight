@@ -1,7 +1,7 @@
 .wrapper {
     border-radius: 15px; 
     border: 1px solid var(--grey-border); 
-    background: rgba(0, 0, 0, 0.40);
+    background: var(--blue-background);
     display: flex;
     padding: 1.8125rem 2.1875rem 1.8125rem 2.0625rem; 
     align-items: center;
@@ -23,7 +23,11 @@
 }
 
 
-.wrapper h3 {
+.wrapper h4 {
+    margin: 0;
+}
+
+.wrapper h5 {
     margin: 0;
 }
 

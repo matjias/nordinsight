@@ -7,7 +7,7 @@ const RiskGuarantee: React.FC<{ openModal: () => void }> = ({ openModal }) => {
   return (
     <div className={styles.background}>
       <div className={styles.wrapper}>
-        <h2>Risk-Reversing Guarantee</h2>
+        <h3>Risk-Reversing Guarantee</h3>
         <p>
           &quot;Clear Insight Guarantee&quot;: If you don&apos;t find the
           implant data you need within the first month, we&apos;ll offer you a

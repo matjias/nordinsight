@@ -1,5 +1,6 @@
-.wrapper h1 {
+.wrapper h3 {
     margin: var(--heading-margin);
+    text-align: center;
 }
 
 .cards {

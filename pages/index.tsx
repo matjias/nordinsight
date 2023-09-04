@@ -42,7 +42,7 @@ const Home: React.FC= () => {
         <Testimonials />
       </section>
       <section>
-        <Partners heading="Join the many hospitals optimizing their MRI procedures with NordInsight. "/>
+        <Partners heading="Join the many hospitals optimizing their MRI procedures with NordInsight"/>
       </section>
       <section>
         <ProductDetails />

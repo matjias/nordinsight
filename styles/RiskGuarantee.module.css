@@ -10,7 +10,7 @@
     font-size: 1.25rem; /* 20px */
 }
 
-.wrapper h2 {
+.wrapper h3 {
     margin: var(--heading-margin);
 }
 

@@ -26,8 +26,8 @@ const NavBar: React.FC<{ openModal: () => void }> = ({ openModal }) => {
         <span></span>
       </div>
       <div className={menuIsOpen ? styles.menuitems : styles.menuitems + ' ' + styles.hide}>
-        <Link href={'/'}>
-          <a onClick={toggleMenu} className={`${styles.item} ${isActive('/')}`}>
+        <Link href={'/product'}>
+          <a onClick={toggleMenu} className={`${styles.item} ${isActive('/product')}`}>
             Product
           </a>
         </Link>

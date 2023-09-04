@@ -7,8 +7,9 @@
     text-align: center;
 }
 
-.wrapper h5 {
-    max-width: 70%;
+.wrapper h6 {
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 .slider {

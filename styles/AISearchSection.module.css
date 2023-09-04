@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.wrapper .info {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto 24px auto;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  width: 256px;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 1px solid var(--grey-border);
+  background: var(--blue-background);
+  padding: 1rem;
+}
+
+.card p {
+  color: #c0c0c0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+}

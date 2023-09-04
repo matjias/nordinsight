@@ -6,7 +6,7 @@ const CTA: React.FC = () => {
   return (
     <div className={styles.background}>
       <div className={styles.wrapper}>
-        <h3>Join Our Newsletter to know....</h3>
+        <h4>Join Our Newsletter</h4>
         <p>
           At NordInsight, we understand the value of time, especially in the
           healthcare sector. That&#39;s why we&#39;ve optimized our platform for

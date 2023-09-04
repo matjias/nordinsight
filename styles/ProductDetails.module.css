@@ -6,8 +6,9 @@
   line-height: 24px; /* 126.316% */
 }
 
-.wrapper h2 {
+.wrapper h3 {
   margin: var(--heading-margin);
+  text-align: center;
 }
 
 .cards {

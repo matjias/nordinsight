@@ -4,6 +4,7 @@ import Button, { ButtonType } from './general/Button'
 
 interface CardProps {
   title?: string
+  subtitle?: string
   text: string
   layout: 'left' | 'right'
   imgUrl: string
@@ -13,6 +14,7 @@ interface CardProps {
 
 const FeatureCard: React.FC<CardProps> = ({
   title,
+  subtitle,
   text,
   layout,
   imgUrl,
@@ -36,7 +38,8 @@ const FeatureCard: React.FC<CardProps> = ({
         />
       </div>
       <div className={styles.info}>
-        {title && <h3>{title}</h3>}
+        {title && <h4>{title}</h4>}
+        {subtitle && <h5>{subtitle}</h5>}
         <p className={styles.text}>{text}</p>
         {buttonTitle && onClickFunction && (
           <Button type={ButtonType.secondary} onClick={onClickFunction}>
