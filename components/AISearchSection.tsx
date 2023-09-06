@@ -26,19 +26,19 @@ const AISearchSection: React.FC<{ openModal: () => void }> = ({
       />
       <div className={styles.flex}>
         <div className={styles.card}>
-          <Image src="/test_icon.svg" width={72} height={72} alt="icon" />
+          <Image src="/test_icon.svg" width={57} height={56} alt="icon" />
           <p>Reduced search time for implant details</p>
         </div>
         <div className={styles.card}>
-          <Image src="/test_icon.svg" width={72} height={72} alt="icon" />
+          <Image src="/test_icon.svg" width={57} height={56} alt="icon" />
           <p>Reduced search time for implant details</p>
         </div>
         <div className={styles.card}>
-          <Image src="/test_icon.svg" width={72} height={72} alt="icon" />
+          <Image src="/test_icon.svg" width={57} height={56} alt="icon" />
           <p>Reduced search time for implant details</p>
         </div>
         <div className={styles.card}>
-          <Image src="/test_icon.svg" width={72} height={72} alt="icon" />
+          <Image src="/test_icon.svg" width={57} height={56} alt="icon" />
           <p>Reduced search time for implant details</p>
         </div>
       </div>

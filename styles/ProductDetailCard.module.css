@@ -42,3 +42,23 @@
 .wrapper hr {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    background: none;
+    border: none;
+    box-shadow: none;
+    min-height: 56px;
+    padding: 0;
+  }
+
+  .wrapper p {
+    display: none;
+  }
+
+  .wrapper hr {
+    display: none;
+  }
+
+
+}

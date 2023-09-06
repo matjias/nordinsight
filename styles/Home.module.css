@@ -24,6 +24,10 @@
 
 
 @media (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
+
   .content section {
     margin: 3rem 0; /* 90px */
   }

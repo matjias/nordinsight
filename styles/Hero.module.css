@@ -11,7 +11,6 @@
     margin: -100px 0 0 0;
 }
   
-
 .wrapper {
   width: 75%;
   margin: 40vh auto 0 auto;
@@ -40,12 +39,23 @@
 }
 
 /* Media queries for smaller screens */
-@media (max-width: 48rem) {
-  /* 768px */
+@media (max-width: 768px) {
 
   .hero {
     width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
   }
+
+  .hero h2 {
+    text-align: center;
+  }
+
+  .hero p {
+    display: none;
+  }
+
 }
 
 /* Media queries for larger screens */

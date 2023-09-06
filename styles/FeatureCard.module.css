@@ -64,6 +64,14 @@
         margin-right: 0; 
     }
 
+    .wrapperRight .img {
+        order: 0;
+    }
+    
+    .wrapperRight .info {
+        order: 1;
+    }
+
     .info {
         max-width: 100%; 
     }

@@ -105,10 +105,7 @@
 }
 
 /* Media queries */
-@media only screen and (max-width: 600px) {
-  .wrapper {
-    width: 85%;
-  }
+@media only screen and (max-width: 768px) {
 
   .input_wrapper {
     padding: 0.3rem 0.5625rem 0.3rem 1.2rem;

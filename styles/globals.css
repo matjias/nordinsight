@@ -16,7 +16,7 @@
   --grey-border: #545454;
   --main-white: #eee;
   --main-blue: #1698e7;
-  --blue-background: #123848; 
+  --blue-background: #123848;
   --heading-margin: 48px auto;
   --animation-speed: 30s;
 }
@@ -47,32 +47,31 @@ body {
 }
 
 #conditionalFinder::before {
-  content: "";
+  content: '';
   display: block;
-  height: 200px; 
-  margin-top: -200px; 
+  height: 200px;
+  margin-top: -200px;
   visibility: hidden;
   pointer-events: none;
 }
 
 #search::before {
-  content: "";
+  content: '';
   display: block;
-  height: 200px; 
-  margin-top: -200px; 
+  height: 200px;
+  margin-top: -200px;
   visibility: hidden;
   pointer-events: none;
 }
 
 #library::before {
-  content: "";
+  content: '';
   display: block;
-  height: 200px; 
-  margin-top: -200px; 
+  height: 200px;
+  margin-top: -200px;
   visibility: hidden;
   pointer-events: none;
 }
-
 
 a {
   color: inherit;
@@ -83,9 +82,7 @@ a {
 
 h1 {
   font-weight: 300;
-  font-size: calc(
-    1rem + 2.8vw
-  ); 
+  font-size: calc(1rem + 2.8vw);
   line-height: 125%;
   letter-spacing: -0.5px;
   margin: 0 auto;
@@ -95,18 +92,14 @@ h1 {
 h2 {
   font-weight: 300;
   text-align: center;
-  font-size: calc(
-    1.5rem + 1.6vw
-  ); 
+  font-size: calc(2.5rem + 0.5vw);
   line-height: 115%;
   margin: 0 auto;
 }
 
 h3 {
   margin: 0 auto;
-  font-size: calc(
-    1rem + 1.2vw
-  ); 
+  font-size: calc(1.5rem + 0.7vw);
   font-weight: 400;
   line-height: 130%;
   text-align: center;
@@ -115,18 +108,14 @@ h3 {
 h4 {
   margin: 0 auto;
   font-weight: 300;
-  font-size: calc(
-    1.25rem + 0.5vw
-  );
+  font-size: calc(1.25rem + 0.5vw);
   line-height: 125%;
   letter-spacing: 0.18px;
 }
 
 h5 {
   margin: 0 auto;
-  font-size: calc(
-    1rem + 0.3vw
-  ); 
+  font-size: calc(1rem + 0.3vw);
   font-weight: 600;
   line-height: 125%;
   text-transform: uppercase;
@@ -135,17 +124,13 @@ h5 {
 
 h6 {
   font-weight: 500;
-  font-size: calc(
-    0.8rem + 0.5vw
-  ); 
+  font-size: calc(1.2rem + 0.1vw);
 }
 
 p {
   font-weight: 300;
   line-height: 150%;
-  font-size: calc(
-    0.8rem + 0.3vw
-  ); 
+  font-size: calc(1rem + 0.1vw);
 }
 
 p.small {

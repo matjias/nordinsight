@@ -17,9 +17,11 @@ const NavBar: React.FC<{ openModal: () => void }> = ({ openModal }) => {
 
   return (
     <nav className={`${styles.wrapper} ${menuIsOpen ? styles['menu-open'] : ''}`}>
-      <div className={styles.logo}>
-        <Image src="/LogohvidFinal.png" height={402} width={1950} alt="logo" />
-      </div>
+        <Link href="/">
+        <a className={styles.logo}>
+          <Image src="/LogohvidFinal.png" height={402} width={1950} alt="logo" />
+        </a>
+      </Link>
       <div onClick={toggleMenu} className={menuIsOpen ? styles.burger + ' ' + styles.burgeropen : styles.burger}>
         <span></span>
         <span></span>

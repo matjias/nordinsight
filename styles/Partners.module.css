@@ -42,4 +42,11 @@
     .slider .slide_track {
         width: calc(6.5rem * 16);
     }
+
+    .wrapper h6 {
+        max-width: 90%;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 150%;
+    }
 }

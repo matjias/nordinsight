@@ -1,7 +1,6 @@
 .subtitle {
   text-align: center;
   margin: 0 auto 50px auto;
-  font-size: 19px;
   font-weight: 300;
   line-height: 24px; /* 126.316% */
 }
@@ -23,7 +22,25 @@
   }
 }
 
-@media (max-width: 678px) {
+@media (max-width: 768px) {
+  .wrapper {
+    background: var(--blue-background);
+    border: 1px solid var(--grey-border);
+    border-radius: 0.9375rem; /* 15px */
+    padding: 2rem;
+
+  }
+
+  .wrapper .subtitle {
+    text-align: left;
+  }
+
+  .wrapper h3 {
+    text-align: left;
+    margin: 20px 0;
+  }
+
+
   .cards {
     grid-template-columns: repeat(1, 1fr);
   }

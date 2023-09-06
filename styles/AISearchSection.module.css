@@ -12,6 +12,7 @@
 
 .flex {
   display: flex;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -22,13 +23,11 @@
   justify-content: center;
   text-align: center;
   gap: 16px;
-  width: 256px;
-  height: 220px;
-  flex-shrink: 0;
+  flex: 1;
   border-radius: 15px;
   border: 1px solid var(--grey-border);
   background: var(--blue-background);
-  padding: 1rem;
+  padding: 2.5rem 1rem;
 }
 
 .card p {
@@ -37,3 +36,38 @@
   font-weight: 700;
   line-height: 150%;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .wrapper .info {
+        max-width: 100%;
+    }
+
+    .flex {
+        flex-direction: column;
+        background: var(--blue-background);
+        border-radius: 15px;
+        border: 1px solid var(--grey-border);
+        padding: 2rem;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .card {
+        border: none;
+        background: none;
+        flex-direction: row;
+        padding: 0;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .card p {
+        color: var(--main-white);
+        font-weight: 500;
+    }
+
+  
+  }
