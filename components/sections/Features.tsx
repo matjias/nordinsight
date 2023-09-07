@@ -1,9 +1,9 @@
-import FeatureCard from './FeatureCard'
-import styles from '../styles/Features.module.css'
+import FeatureCard from '../FeatureCard'
+import styles from "../../styles/Features.module.css"
 
 const Features: React.FC = () => {
   const navigateToSection = (sectionId: string) => {
-    const offset = 500;
+    const offset = 500
 
     if (window.location.pathname !== '/product') {
       window.location.href = `/product#${sectionId}`

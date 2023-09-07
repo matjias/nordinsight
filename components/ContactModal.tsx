@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import Select from 'react-select'
 import { StylesConfig } from 'react-select'
 import Image from 'next/image'
-import MessageSent from './message-sent'
 import styles from '../styles/ContactModal.module.css'
+import MessageSent from './Message-sent'
 
 interface ContactModalProps {
   isOpen: boolean

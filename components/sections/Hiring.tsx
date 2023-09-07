@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import styles from '../styles/Hiring.module.css'
-import Button, { ButtonType } from './general/Button'
+import styles from '../../styles/Hiring.module.css'
+import Button, { ButtonType } from '../general/Button'
 
 const Hiring: React.FC = () => {
   return (
@@ -15,13 +15,16 @@ const Hiring: React.FC = () => {
 
       <Button
         type={ButtonType.primary}
-
-        onClick={() => window.open('https://thehub.io/startups/nordinsight', '_blank')}
-      >See open positions in thehub{' '}
-      <FontAwesomeIcon
-        icon={faArrowRight}
-        style={{ width: '16px', height: '16px' }}
-      /></Button>
+        onClick={() =>
+          window.open('https://thehub.io/startups/nordinsight', '_blank')
+        }
+      >
+        See open positions in thehub{' '}
+        <FontAwesomeIcon
+          icon={faArrowRight}
+          style={{ width: '16px', height: '16px' }}
+        />
+      </Button>
     </div>
   )
 }

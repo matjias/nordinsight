@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '../styles/Partners.module.css'
+import styles from "../../styles/Partners.module.css"
 
 interface PartnersProps {
   heading: string
@@ -9,9 +9,9 @@ const Partners: React.FC<PartnersProps> = ({ heading }) => {
   return (
     <div className={styles.background}>
       <div className={styles.wrapper}>
-        <h6>
+        <h4>
           {heading}
-        </h6>
+        </h4>
         <div className={styles.slider}>
           <div className={styles.slide_track}>
             <div className={styles.slider}>

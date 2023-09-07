@@ -18,29 +18,32 @@
 }
 
 /* Button Colors/Styles */
-.primary,
-.submit {
+.primary {
   font-weight: 600;
   color: var(--main-white);
   background: var(--main-blue);
   border: 0.125rem solid var(--main-blue); /* 2px */
   transition: transform 0.2s ease-in-out;
 }
-.primary:hover,
-.submit:hover {
+.primary:hover {
   color: var(--main-white);
   background: rgba(20, 127, 191, 1);
   border: 0.125rem solid rgba(20, 127, 191, 1); /* 2px */
 }
 
-.primary:focus,
-.submit:focus {
+.primary:focus {
   border: transparent;
 }
 
-.primary:active,
-.submit:active {
+.primary:active {
   transform: scale(0.95);
+}
+
+.submit {
+  border-radius: 5px;
+  background: #123848;
+  width: 100%;
+  box-shadow: none;
 }
 
 .cancel {

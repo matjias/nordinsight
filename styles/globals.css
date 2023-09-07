@@ -19,6 +19,7 @@
   --blue-background: #123848;
   --heading-margin: 48px auto;
   --animation-speed: 30s;
+  --dark-overlay: rgba(0, 0, 0, 0.5);
 }
 /* Reset and Box Model */
 * {
@@ -46,25 +47,7 @@ body {
   */
 }
 
-#conditionalFinder::before {
-  content: '';
-  display: block;
-  height: 200px;
-  margin-top: -200px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-#search::before {
-  content: '';
-  display: block;
-  height: 200px;
-  margin-top: -200px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-#library::before {
+#search::before, #library::before, #conditionalFinder::before  {
   content: '';
   display: block;
   height: 200px;

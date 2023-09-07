@@ -2,12 +2,12 @@ import { useState } from 'react'
 import Layout from '../components/general/Layout'
 import styles from '../styles/Home.module.css'
 import ContactModal from '../components/ContactModal'
-import Heading from '../components/Heading'
-import Newsletter from '../components/newsletter'
-import RiskGuarantee from '../components/RiskGuarantee'
-import ScanningSection from '../components/ScanningSection'
-import AISearchSection from '../components/AISearchSection'
-import ImplantLibrarySection from '../components/ImplantLibrarySection'
+import Heading from '../components/sections/Heading'
+import Newsletter from '../components/Newsletter'
+import RiskGuarantee from '../components/sections/RiskGuarantee'
+import ScanningSection from '../components/sections/ScanningSection'
+import AISearchSection from '../components/sections/AISearchSection'
+import ImplantLibrarySection from '../components/sections/ImplantLibrarySection'
 
 const Company: React.FC = () => {
   const [isModalOpen, setModalOpen] = useState(false)

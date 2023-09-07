@@ -1,5 +1,5 @@
-import styles from '../styles/Hero.module.css'
-import Button, { ButtonType } from './general/Button'
+import styles from "../../styles/Hero.module.css"
+import Button, { ButtonType } from '../general/Button'
 
 const Hero: React.FC = () => {
   return (
@@ -8,7 +8,11 @@ const Hero: React.FC = () => {
         <div className={styles.hero}>
           <h5>NORDINSIGHT</h5>
           <h2>The Future of Implant Safety in MRI Scanning</h2>
-          <p>Navigating the MRI safety labyrinth? Say goodbye to countless hours lost and discover the way forward with NordInsight&apos;s comprehensive implant library.</p>
+          <p>
+            Navigating the MRI safety labyrinth? Say goodbye to countless hours
+            lost and discover the way forward with NordInsight&apos;s
+            comprehensive implant library.
+          </p>
           <Button
             small
             onClick={() => {

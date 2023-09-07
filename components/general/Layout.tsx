@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Navbar from '../Navbar';
 import ContactModal from '../ContactModal';
-import Footer from '../footer';
+import Footer from '../sections/Footer';
 
 interface MainLayoutProps {
   children: React.ReactNode;

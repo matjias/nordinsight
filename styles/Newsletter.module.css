@@ -4,14 +4,16 @@
 }
 
 .emailinput {
-  font-family: 'Inter', sans-serif;
   transform: translateY(-1px);
   background: none;
   border: none;
   line-height: 1.5rem; /* 24px */
-  width: 100%; /* Full width of its container */
+  width: 100%; 
   color: var(--main-white);
   font-size: 1rem; /* 16px */
+}
+.emailinput:focus {
+  background: none;
 }
 
 .input_wrapper {
@@ -35,10 +37,6 @@
   line-height: 1.5rem; /* 24px */
 }
 
-.email img {
-  filter: invert(1);
-}
-
 .popup {
   display: flex;
   z-index: 1;
@@ -47,22 +45,30 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(187, 187, 187, 0.25);
+  background: var(--dark-overlay);
   width: 100%;
 }
 
 .popup .box {
   position: relative;
-  padding: 50px 30px 30px 30px;
+  padding: 56px 24px;
   margin: auto;
-  /* width: 300px;
-  height: 200px; */
-  background: #2a2a2a;
-  border-radius: 10px;
+  width: 500px;
+  height: 400px; 
+  background: var(--main-blue);
+  border-radius: 15px;
+  border: 1px solid #535353;
 }
+
+.popup .box h4 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
 .popup .box form {
   margin: auto;
-  width: 70%;
+  width: 90%;
   display: flex;
   flex-flow: column;
 }
@@ -102,6 +108,7 @@
 }
 .submitbtn {
   margin: auto;
+  width: 100%;
 }
 
 /* Media queries */

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './newsletter.module.css'
+import styles from '../styles/Newsletter.module.css'
 import Button, { ButtonType } from './general/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
@@ -71,7 +71,7 @@ const Newsletter = () => {
           placeholder="Enter your email address"
           type="email"
         />
-        <Button onClick={submitEmail} type={ButtonType.submit} small>
+        <Button onClick={submitEmail} type={ButtonType.primary} small>
           <span>Subscribe</span>
         </Button>
       </div>
@@ -86,7 +86,7 @@ const Newsletter = () => {
               >
                 <FontAwesomeIcon icon={faXmark} color="white" />
               </button>
-              <h5>Tell us a bit more about yourself</h5>
+              <h4>Tell us a bit more about yourself</h4>
               <div className={styles.info}>
                 <label>Name</label>
                 <input
@@ -107,7 +107,7 @@ const Newsletter = () => {
                 />
               </div>
               <div className={styles.submitbtn}>
-                <Button type={ButtonType.submit} onClick={submitInfo} small>
+                <Button type={ButtonType.submit} onClick={submitInfo}>
                   Submit
                 </Button>
               </div>

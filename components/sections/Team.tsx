@@ -1,5 +1,5 @@
-import styles from '../styles/Team.module.css'
-import Profile from './profile'
+import styles from '../../styles/Team.module.css'
+import Profile from '../Profile'
 import Image from 'next/image'
 
 const Team: React.FC = () => {
@@ -19,7 +19,7 @@ const Team: React.FC = () => {
 
   return (
     <div className={styles.wrapper}>
-      <h1>Hey, let&#39;s solve MRI-safety together!</h1>
+      <h2>Hey, let&#39;s solve MRI-safety together!</h2>
       <div className={styles.profiles}>
         <Profile info={simonInfo} />
         <Profile info={mathiasInfo} />

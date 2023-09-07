@@ -1,8 +1,7 @@
-import Container from './general/Container'
-import styles from '../styles/ScanningSection.module.css'
-import FeatureCard from './FeatureCard'
+import Container from '../general/Container'
+import styles from '../../styles/ScanningSection.module.css'
+import FeatureCard from '../FeatureCard'
 import Image from 'next/image'
-
 
 const ScanningSection: React.FC<{ openModal: () => void }> = ({
   openModal,
@@ -17,18 +16,18 @@ const ScanningSection: React.FC<{ openModal: () => void }> = ({
       <div className={styles.flex}>
         <Container text="Struggling with unidentified or multiple implants during MRI scans? Lack of clear guidance can slow you down and pose safety risks." />
         <div className={styles.card}>
-            <div className={styles.flex}>
-                <Image src="/test_icon.svg" height={56} width={56} alt='icon'/>
-                <p>Potential delays</p>
-            </div>
-            <div className={styles.flex}>
-                <Image src="/test_icon.svg" height={56} width={56} alt='icon'/>
-                <p>Care inefficiencies</p>
-            </div>
-            <div className={styles.flex}>
-                <Image src="/test_icon.svg" height={56} width={56} alt='icon'/>
-                <p>Denied MRI scans</p>
-            </div>
+          <div className={styles.flex}>
+            <Image src="/test_icon.svg" height={56} width={56} alt="icon" />
+            <p>Potential delays</p>
+          </div>
+          <div className={styles.flex}>
+            <Image src="/test_icon.svg" height={56} width={56} alt="icon" />
+            <p>Care inefficiencies</p>
+          </div>
+          <div className={styles.flex}>
+            <Image src="/test_icon.svg" height={56} width={56} alt="icon" />
+            <p>Denied MRI scans</p>
+          </div>
         </div>
       </div>
       <FeatureCard

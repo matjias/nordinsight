@@ -1,9 +1,11 @@
-import styles from '../styles/ImplantLibrarySection.module.css'
-import FeatureCard from './FeatureCard'
-import Container from './general/Container'
+import styles from '../../styles/ImplantLibrarySection.module.css'
+import FeatureCard from '../FeatureCard'
+import Container from '../general/Container'
 import Image from 'next/image'
 
-const ImplantLibrarySection: React.FC<{ openModal: () => void }> = ({ openModal }) => {
+const ImplantLibrarySection: React.FC<{ openModal: () => void }> = ({
+  openModal,
+}) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.heading}>
@@ -41,7 +43,11 @@ const ImplantLibrarySection: React.FC<{ openModal: () => void }> = ({ openModal 
         text="No more second-guessing, Simply leverage advanced filtering to pinpoint the exact implant type and its corresponding details, ensuring both safety and accuracy in MRI scans."
       />
       <div className={styles.summary}>
-        <h3>Our platform centralizes a vast collection of implant conditionals, ensuring that all the information you need is just a search away, all in one place.</h3>
+        <h3>
+          Our platform centralizes a vast collection of implant conditionals,
+          ensuring that all the information you need is just a search away, all
+          in one place.
+        </h3>
       </div>
     </div>
   )

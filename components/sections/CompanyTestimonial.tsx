@@ -1,13 +1,13 @@
-import styles from '../styles/CompanyTestimonial.module.css'
-import Button, { ButtonType } from './general/Button'
-import TestimonialCard from './TestimonialCard'
+import styles from '../../styles/CompanyTestimonial.module.css'
+import Button, { ButtonType } from '../general/Button'
+import TestimonialCard from '../TestimonialCard'
 
 const CompanyTestimonial: React.FC<{ openModal: () => void }> = ({
   openModal,
 }) => {
   return (
     <div className={styles.wrapper}>
-      <h1>Bridging the Gap</h1>
+      <h2>Bridging the Gap</h2>
       <div className={styles.flex}>
         <div className={styles.card}>
           <h4>

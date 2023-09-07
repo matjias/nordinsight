@@ -1,5 +1,5 @@
-import styles from '../styles/Testimonials.module.css'
-import TestimonialCard from './TestimonialCard'
+import styles from "../../styles/Testimonials.module.css"
+import TestimonialCard from '../TestimonialCard'
 
 const Testimonials: React.FC = () => {
   return (
@@ -30,4 +30,4 @@ const Testimonials: React.FC = () => {
   )
 }
 
-export default Testimonials;
+export default Testimonials

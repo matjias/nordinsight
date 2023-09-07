@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import Layout from '../components/general/Layout'
 import styles from '../styles/Home.module.css'
-import Values from '../components/Values'
-import Team from '../components/Team'
-import Partners from '../components/Partners'
-import Hiring from '../components/Hiring'
-import CompanyTestimonial from '../components/CompanyTestimonial'
+import Values from '../components/sections/Values'
+import Team from '../components/sections/Team'
+import Partners from '../components/sections/Partners'
+import Hiring from '../components/sections/Hiring'
+import CompanyTestimonial from '../components/sections/CompanyTestimonial'
 import ContactModal from '../components/ContactModal'
-import Heading from '../components/Heading'
+import Heading from '../components/sections/Heading'
 import Button, { ButtonType } from '../components/general/Button'
 
 const Company: React.FC = () => {
@@ -20,12 +20,17 @@ const Company: React.FC = () => {
     <div className={styles.container}>
       <Layout>
         <section>
-            <Heading title="Enhancing MRI safety by facilitating access to reliable, updated information." > 
+          <Heading title="Enhancing MRI safety by facilitating access to reliable, updated information.">
             <div className={styles.button}>
-                <Button onClick={toggleModal} type={ButtonType.primary} className={styles.transparent}>Get in Touch with Us</Button>
+              <Button
+                onClick={toggleModal}
+                type={ButtonType.primary}
+                className={styles.transparent}
+              >
+                Get in Touch with Us
+              </Button>
             </div>
-            
-            </Heading>
+          </Heading>
         </section>
         <div className={styles.content}>
           <section>

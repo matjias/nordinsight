@@ -1,5 +1,5 @@
-import styles from '../styles/ProductDetails.module.css'
-import ProductDetailCard from './ProductDetailCard'
+import styles from "../../styles/ProductDetails.module.css"
+import ProductDetailCard from '../ProductDetailCard'
 
 const ProductDetails: React.FC = () => {
   return (

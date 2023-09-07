@@ -1,7 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import styles from '../styles/RiskGuarantee.module.css'
-import Button, { ButtonType } from './general/Button'
+import styles from "../../styles/RiskGuarantee.module.css"
+import Button, { ButtonType } from '../general/Button'
 
 const RiskGuarantee: React.FC<{ openModal: () => void }> = ({ openModal }) => {
   return (

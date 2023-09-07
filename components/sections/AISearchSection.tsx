@@ -1,6 +1,6 @@
-import styles from '../styles/AISearchSection.module.css'
-import FeatureCard from './FeatureCard'
-import Container from './general/Container'
+import styles from '../../styles/AISearchSection.module.css'
+import FeatureCard from '../FeatureCard'
+import Container from '../general/Container'
 import Image from 'next/image'
 
 const AISearchSection: React.FC<{ openModal: () => void }> = ({
