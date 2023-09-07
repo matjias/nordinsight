@@ -10,21 +10,14 @@
   box-sizing: border-box;
   min-width: 256px;
   min-height: 176px;
-  box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.10);
+  box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06),
+    0px 4px 8px -2px rgba(16, 24, 40, 0.1);
 }
 
 .title {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.title img {
-  flex-shrink: 0;
-  width: 3rem;
-  height: 3rem;
-  min-width: 3rem;
-  min-height: 3rem;
 }
 
 .wrapper h6 {
@@ -59,6 +52,4 @@
   .wrapper hr {
     display: none;
   }
-
-
 }
