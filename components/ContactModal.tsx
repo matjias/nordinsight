@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import Select from 'react-select'
 import { StylesConfig } from 'react-select'
-import Image from 'next/image'
 import styles from '../styles/ContactModal.module.css'
 import MessageSent from './Message-sent'
 
@@ -152,7 +153,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
       <div className={styles.wrapper}>
         {isSent && <MessageSent name={formData.fullname} />}
         <div className={styles.cross_icon} onClick={onClose}>
-          <Image src="/cross_icon.svg" width={24} height={24} alt="" />
+          <FontAwesomeIcon icon={faXmark} color="white" />
         </div>
 
         {!isSent && (

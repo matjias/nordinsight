@@ -54,6 +54,13 @@ const Newsletter = () => {
 
     setSubId(id)
   }
+  const popupContentRef = React.useRef(null);
+
+  const handleOutsideClick = (e) => {
+    if (popupContentRef.current && !popupContentRef.current.contains(e.target)) {
+      setEmailSubmitted(false);
+    }
+  };  
 
   return (
     <div className={styles.wrapper}>
@@ -61,7 +68,7 @@ const Newsletter = () => {
         Sign up for our newsletter to be one of the first to get access, when we
         launh for the public.
       </p> */}
-      <div className={styles.input_wrapper}>
+      <div className={styles.inputWrapper}>
         <input
           className={styles.emailinput}
           required
@@ -77,8 +84,8 @@ const Newsletter = () => {
       </div>
       {/* {isSent && <MessageSent name={formData.name} />} */}
       {emailSubmitted && (
-        <div className={styles.popup}>
-          <div className={styles.box}>
+         <div className={styles.popup} onClick={handleOutsideClick}>
+         <div className={styles.box} ref={popupContentRef}>
             <form autoComplete="none">
               <button
                 onClick={() => setEmailSubmitted(false)}
@@ -86,6 +93,7 @@ const Newsletter = () => {
               >
                 <FontAwesomeIcon icon={faXmark} color="white" />
               </button>
+
               <h4>Tell us a bit more about yourself</h4>
               <div className={styles.info}>
                 <label>Name</label>
@@ -107,7 +115,7 @@ const Newsletter = () => {
                 />
               </div>
               <div className={styles.submitbtn}>
-                <Button type={ButtonType.submit} onClick={submitInfo}>
+                <Button type={ButtonType.primary} onClick={submitInfo}>
                   Submit
                 </Button>
               </div>

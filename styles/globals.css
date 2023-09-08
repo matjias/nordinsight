@@ -20,6 +20,8 @@
   --heading-margin: 48px auto;
   --animation-speed: 30s;
   --dark-overlay: rgba(0, 0, 0, 0.5);
+  --modal-background: #292929;
+  --input-background: rgba(128, 128, 128, 0.25);
 }
 /* Reset and Box Model */
 * {
