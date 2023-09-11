@@ -154,7 +154,6 @@
     top: calc(100% + 20px);
     left: 0;
     border-radius: 2rem;
-    padding-bottom: 30px;
   }
 
   .hide {
@@ -186,4 +185,5 @@
   .burgeropen {
     display: none;
   }
+
 }
