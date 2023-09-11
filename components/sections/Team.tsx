@@ -1,5 +1,5 @@
 import styles from '../../styles/Team.module.css'
-import Profile from '../Profile'
+import Profile from '../profile'
 import Image from 'next/image'
 
 const Team: React.FC = () => {

@@ -1,5 +1,5 @@
-import styles from "../../styles/CTA.module.css"
-import Newsletter from '../Newsletter'
+import styles from '../../styles/CTA.module.css'
+import Newsletter from '../newsletter'
 
 const CTA: React.FC = () => {
   return (
