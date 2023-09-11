@@ -19,6 +19,7 @@
 .profileimage {
   display: flex;
   justify-content: center;
+  overflow: hidden;
   max-width: 29.125rem; /* 466px */
   max-height: 26.875rem; /* 430px */
   border-radius: 1.25rem; /* 20px */
