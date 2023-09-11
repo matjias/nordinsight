@@ -26,20 +26,20 @@ const AISearchSection: React.FC<{ openModal: () => void }> = ({
       />
       <div className={styles.flex}>
         <div className={styles.card}>
-          <Image src="/test_icon.svg" width={57} height={56} alt="icon" />
+          <Image src="/icons/icon7.png" width={57} height={56} alt="icon" />
           <p>Reduced search time for implant details</p>
         </div>
         <div className={styles.card}>
-          <Image src="/test_icon.svg" width={57} height={56} alt="icon" />
-          <p>Reduced search time for implant details</p>
+          <Image src="/icons/icon8.png" width={57} height={56} alt="icon" />
+          <p>Up-to-date implant information</p>
         </div>
         <div className={styles.card}>
-          <Image src="/test_icon.svg" width={57} height={56} alt="icon" />
-          <p>Reduced search time for implant details</p>
+          <Image src="/icons/icon9.png" width={57} height={56} alt="icon" />
+          <p>More time for patient care</p>
         </div>
         <div className={styles.card}>
-          <Image src="/test_icon.svg" width={57} height={56} alt="icon" />
-          <p>Reduced search time for implant details</p>
+          <Image src="/icons/icon5.png" width={57} height={56} alt="icon" />
+          <p>Healthcare professional oriented design</p>
         </div>
       </div>
     </div>

@@ -17,15 +17,39 @@ const ScanningSection: React.FC<{ openModal: () => void }> = ({
         <Container text="Struggling with unidentified or multiple implants during MRI scans? Lack of clear guidance can slow you down and pose safety risks." />
         <div className={styles.card}>
           <div className={styles.flex}>
-            <Image src="/test_icon.svg" height={56} width={56} alt="icon" />
+            <div className={styles.imgContainer}>
+              <Image
+                className={styles.icon}
+                src="/icons/icon4.png"
+                height={56}
+                width={56}
+                alt="icon"
+              />
+            </div>
             <p>Potential delays</p>
           </div>
           <div className={styles.flex}>
-            <Image src="/test_icon.svg" height={56} width={56} alt="icon" />
+            <div className={styles.imgContainer}>
+              <Image
+                className={styles.icon}
+                src="/icons/icon5.png"
+                height={56}
+                width={56}
+                alt="icon"
+              />
+            </div>
             <p>Care inefficiencies</p>
           </div>
           <div className={styles.flex}>
-            <Image src="/test_icon.svg" height={56} width={56} alt="icon" />
+            <div className={styles.imgContainer}>
+              <Image
+                className={styles.icon}
+                src="/icons/icon6.png"
+                height={56}
+                width={56}
+                alt="icon"
+              />
+            </div>
             <p>Denied MRI scans</p>
           </div>
         </div>

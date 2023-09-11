@@ -21,15 +21,40 @@ const ImplantLibrarySection: React.FC<{ openModal: () => void }> = ({
         <Container text="The hunt for implant conditionals often becomes a tedious scavenger hunt across multiple websites, sifting through fragmented pieces of information." />
         <div className={styles.card}>
           <div className={styles.flex}>
-            <Image src="/test_icon.svg" height={56} width={56} alt="icon" />
+            <div className={styles.imgContainer}>
+              <Image
+                className={styles.icon}
+                src="/icons/icon4.png"
+                height={56}
+                width={56}
+                alt="icon"
+              />
+            </div>
             <p>Potential delays</p>
           </div>
           <div className={styles.flex}>
-            <Image src="/test_icon.svg" height={56} width={56} alt="icon" />
-            <p>Care inefficiencies</p>
+            <div className={styles.imgContainer}>
+              <Image
+                className={styles.icon}
+                src="/icons/icon10.png"
+                height={56}
+                width={56}
+                alt="icon"
+              />
+            </div>
+
+            <p>Out-of-date information</p>
           </div>
           <div className={styles.flex}>
-            <Image src="/test_icon.svg" height={56} width={56} alt="icon" />
+            <div className={styles.imgContainer}>
+              <Image
+                className={styles.icon}
+                src="/icons/icon6.png"
+                height={56}
+                width={56}
+                alt="icon"
+              />
+            </div>
             <p>Denied MRI scans</p>
           </div>
         </div>

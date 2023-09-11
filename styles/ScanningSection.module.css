@@ -45,7 +45,18 @@
   line-height: 136%;
 }
 
-@media (max-width: 768px) {
+.icon {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.imgContainer {
+  min-width: 56px;
+  min-height: 56px;
+}
+
+@media (max-width: 935px) {
   .flex {
     flex-direction: column;
   }
@@ -56,5 +67,9 @@
 
   .card .flex {
     flex-direction: row;
+  }
+
+  .card p {
+    color: var(--main-white);
   }
 }

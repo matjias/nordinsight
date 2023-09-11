@@ -16,24 +16,24 @@ const ProductDetails: React.FC = () => {
         <div className={styles.cards}>
           <ProductDetailCard
             title="Hassle-free setup"
-            imgUrl="/icon1.png"
+            imgUrl="/icons/icon1.png"
             text="Initiate your hospital's access with just an email. No intricate installations or configurations. "
           />
 
           <ProductDetailCard
             title="Navigate with Ease"
-            imgUrl="/icon2.png"
+            imgUrl="/icons/icon2.png"
             text="Our platform operates similarly to search engines like Google,  making it user-friendly."
           />
 
           <ProductDetailCard
             title="Access our Platform"
-            imgUrl="/icon3.png"
+            imgUrl="/icons/icon3.png"
             text="No need for intricate system integrations or software installations. "
           />
           <ProductDetailCard
             title="Unmatched Reliability"
-            imgUrl="/icon3.png"
+            imgUrl="/icons/icon3.png"
             text="Experience peace of mind with NordInsight's 99.99% uptime. Clear Cost Benefits with NordInsight"
           />
         </div>
