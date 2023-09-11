@@ -4,7 +4,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import Select from 'react-select'
 import { StylesConfig } from 'react-select'
 import styles from '../styles/ContactModal.module.css'
-import MessageSent from './Message-sent'
+import MessageSent from './message-sent'
 
 interface ContactModalProps {
   isOpen: boolean
