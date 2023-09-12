@@ -93,6 +93,7 @@
   .primary,
   .submit {
     max-width: auto;
+    padding: 1rem 1.3rem;
   }
 
   .secondary {

@@ -37,6 +37,17 @@
   line-height: 150%;
 }
 
+.icon {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.imgContainer {
+  min-width: 56px;
+  min-height: 56px;
+}
+
 @media (max-width: 768px) {
   .wrapper .info {
     max-width: 100%;

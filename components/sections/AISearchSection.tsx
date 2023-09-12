@@ -26,19 +26,28 @@ const AISearchSection: React.FC<{ openModal: () => void }> = ({
       />
       <div className={styles.flex}>
         <div className={styles.card}>
-          <Image src="/icons/icon7.png" width={57} height={56} alt="icon" />
+          <div className={styles.imgContainer}>
+            <Image className={styles.icon} src="/icons/icon7.png" width={57} height={56} alt="icon" />
+          </div>
           <p>Reduced search time for implant details</p>
         </div>
         <div className={styles.card}>
-          <Image src="/icons/icon8.png" width={57} height={56} alt="icon" />
+          <div className={styles.imgContainer}>
+            <Image className={styles.icon} src="/icons/icon8.png" width={57} height={56} alt="icon" />
+          </div>
           <p>Up-to-date implant information</p>
         </div>
         <div className={styles.card}>
-          <Image src="/icons/icon9.png" width={57} height={56} alt="icon" />
+          <div className={styles.imgContainer}>
+            <Image className={styles.icon} src="/icons/icon9.png" width={57} height={56} alt="icon" />
+          </div>
+
           <p>More time for patient care</p>
         </div>
         <div className={styles.card}>
-          <Image src="/icons/icon5.png" width={57} height={56} alt="icon" />
+          <div className={styles.imgContainer}>
+            <Image className={styles.icon} src="/icons/icon5.png" width={57} height={56} alt="icon" />
+          </div>
           <p>Healthcare professional oriented design</p>
         </div>
       </div>

@@ -188,4 +188,11 @@
   padding: 15px 29.5px;
 }
 
+@media (max-width: 768px) {
+  
+  .wrapper {
+    padding: 3.5rem 3.5rem;
+  }
+}
+
 

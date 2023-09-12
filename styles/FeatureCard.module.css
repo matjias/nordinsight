@@ -3,7 +3,7 @@
     border: 1px solid var(--grey-border); 
     background: var(--blue-background);
     display: flex;
-    padding: 1.8125rem 2.1875rem 1.8125rem 2.0625rem; 
+    padding: 30px 35px;
     align-items: center;
     justify-content: space-around;
     gap: 1.875rem; /* 30px */
@@ -51,6 +51,7 @@
 @media (max-width: 768px) {
     .wrapper {
         flex-direction: column;
+        padding: 1.5rem 1.8rem;
     }
 
     .wrapperLeft, .wrapperRight {
@@ -77,9 +78,8 @@
     .img {
         width: 100%;
     }
-
-
 }
+
 @media (min-width: 1441px) {
     .wrapper {
         max-width: 87.5rem;  /* 1400px */
