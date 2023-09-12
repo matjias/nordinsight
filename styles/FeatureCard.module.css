@@ -42,11 +42,9 @@
 .img {
     border-radius: 16px; 
     overflow: hidden;
-    background: lightgray;
     margin: 0;
     width: 50%; 
     position: relative;
-    
 }
 
 /* Media queries */
