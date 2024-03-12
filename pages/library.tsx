@@ -14,7 +14,8 @@ const Library: React.FC<{ implants: any[] }> = ({ implants }) => {
   }
 
   const signupRedirect = () => {
-    window.location.href = 'https://db.nordradiology.com/sign-up/trial'
+    window.location.href =
+      'https://dev-nordradiology.herokuapp.com/sign-up/trial'
   }
 
   const search = (term) => {
