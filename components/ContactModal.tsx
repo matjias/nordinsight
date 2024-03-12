@@ -5,6 +5,7 @@ import Select from 'react-select'
 import { StylesConfig } from 'react-select'
 import styles from '../styles/ContactModal.module.css'
 import MessageSent from './message-sent'
+import Link from 'next/link'
 
 interface ContactModalProps {
   isOpen: boolean
@@ -162,8 +163,10 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
             <p>
               Are you interested in learning more or want to collaborate?
               We&apos;d love to hear from you! Contact us on{' '}
-              <a href="mailto:info@nordinsight.com">info@nordinsight.com</a> or
-              through the form below.
+              <Link href="mailto:info@nordinsight.com">
+                info@nordinsight.com
+              </Link>{' '}
+              or through the form below.
             </p>
             <form autoComplete="none" onSubmit={send}>
               <div className={styles.nameinput}>

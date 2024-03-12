@@ -42,7 +42,7 @@
 }
 
 .summary {
-  padding: 29px 35px 29px 33px;
+  padding: 50px;
   border-radius: 15px;
   border: 1px solid var(--grey-border);
   background: var(--blue-background);

@@ -7,6 +7,7 @@ export enum ButtonType {
   cancel = 'cancel',
   submit = 'submit',
   secondary = 'secondary',
+  signUp = 'sign-up',
 }
 
 const Button: React.FC<{
@@ -31,7 +32,7 @@ const Button: React.FC<{
       {type === ButtonType.secondary && (
         <>
           <FontAwesomeIcon
-          className={styles.faArrowRight}
+            className={styles.faArrowRight}
             icon={faArrowRight}
             style={{ width: '16px', height: '16px' }}
           />

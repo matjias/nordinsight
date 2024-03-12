@@ -3,19 +3,14 @@
 }
 
 .profiles {
-  display: flex; 
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
   margin: 0 auto;
-  gap: 2rem; 
+  gap: 2rem;
 }
-
 
 @media only screen and (max-width: 768px) {
   .profiles {
     gap: 1rem;
   }
 }
-
-
-
-

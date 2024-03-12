@@ -6,9 +6,10 @@ const CTA: React.FC = () => {
     <div className={styles.wrapper}>
       <h4>Join Our Newsletter</h4>
       <p>
-        At NordInsight, we understand the value of time, especially in the
-        healthcare sector. That&#39;s why we&#39;ve optimized our platform for
-        instant access and ease of use.
+        Join our newsletter to stay updated on MRI safety best practices and
+        advancements in scanning patients with implants. You&apos;ll receive
+        timely information on new features we introduce to enhance efficiency
+        and safeguard patient well-being.
       </p>
       <Newsletter />
     </div>

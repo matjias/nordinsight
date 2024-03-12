@@ -57,10 +57,10 @@ const ScanningSection: React.FC<{ openModal: () => void }> = ({
       <FeatureCard
         subtitle="Solution"
         layout="left"
-        imgUrl="/test_img.png"
-        buttonTitle="Contact us"
+        imgUrl="/cond.svg"
+        buttonTitle="Try it"
         onClickFunction={openModal}
-        text="We've revolutionized this search with our Extensive Library of Implant Conditionals. Say goodbye to the hassle of juggling multiple tabs and sources."
+        text="No more second-guessing, Simply leverage advanced filtering to pinpoint the exact implant type and its corresponding details, ensuring both safety and accuracy in MRI scans."
       />
     </div>
   )

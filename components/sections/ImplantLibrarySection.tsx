@@ -62,10 +62,10 @@ const ImplantLibrarySection: React.FC<{ openModal: () => void }> = ({
       <FeatureCard
         subtitle="Solution"
         layout="left"
-        imgUrl="/test_img.png"
-        buttonTitle="Contact us"
+        imgUrl="/book.svg"
+        buttonTitle="Try it"
         onClickFunction={openModal}
-        text="No more second-guessing, Simply leverage advanced filtering to pinpoint the exact implant type and its corresponding details, ensuring both safety and accuracy in MRI scans."
+        text="We've revolutionized this search with our Extensive Library of Implant Conditionals. Say goodbye to the hassle of juggling multiple tabs and sources."
       />
       <div className={styles.summary}>
         <h3>

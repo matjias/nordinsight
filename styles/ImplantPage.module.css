@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
+}
+.implant {
+  padding: 100px 120px;
+  margin-top: 100px;
+  background-color: #123848;
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  border: 0.2px solid white;
+}
+.implant header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.implant h1,
+.implant h2,
+.implant h3 {
+  text-align: left;
+  margin: 0;
+  font-weight: 200;
+}
+
+.implant h1 {
+  font-size: 2rem;
+}
+.implant h2 {
+  font-size: 1.8rem;
+}
+
+.implant h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.implant a {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 100;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 25px;
+  background: #6ecff5;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.implant img {
+  display: inline;
+  width: 50px;
+  height: 50px;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.contact {
+  padding: 20px 0;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 50px;
+}
+.contact h4 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 100;
+  max-width: 70%;
+}

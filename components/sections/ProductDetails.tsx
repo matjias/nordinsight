@@ -1,4 +1,4 @@
-import styles from "../../styles/ProductDetails.module.css"
+import styles from '../../styles/ProductDetails.module.css'
 import ProductDetailCard from '../ProductDetailCard'
 
 const ProductDetails: React.FC = () => {
@@ -27,9 +27,9 @@ const ProductDetails: React.FC = () => {
           />
 
           <ProductDetailCard
-            title="Access our Platform"
+            title="Up-to-date information"
             imgUrl="/icons/icon3.png"
-            text="No need for intricate system integrations or software installations. "
+            text="The entire library is frequently reviewed and updated to ensure you have the most recent information."
           />
           <ProductDetailCard
             title="Unmatched Reliability"

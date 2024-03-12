@@ -1,9 +1,9 @@
 .wrapper {
   display: flex;
-  padding: 9px 15px;
+  padding: 15px 17.5px;
   align-items: center;
   justify-content: space-between;
-  border-radius: 2rem;
+  border-radius: 50px;
   position: sticky;
   z-index: 100;
   max-width: 800px;
@@ -15,17 +15,24 @@
 
 .logo {
   max-width: 180px;
+  margin-left: 10px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
 }
 
 .menuitems {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   transition: all 0.5s;
+  flex: auto;
+  justify-content: space-between;
 }
 
-.item {
-  display: block;
+.item,
+.navlinks {
   font-weight: 200;
   padding: 18px 20px;
   position: relative;
@@ -148,12 +155,17 @@
     flex-flow: column nowrap;
     position: absolute;
     right: 0;
-    background: #373B3E;
+    background: #373b3e;
     justify-content: flex-start;
     align-items: center;
     top: calc(100% + 20px);
     left: 0;
     border-radius: 2rem;
+  }
+
+  .navlinks {
+    display: flex;
+    flex-flow: column nowrap;
   }
 
   .hide {
@@ -175,9 +187,7 @@
     background: rgba(0, 0, 0, 0.4);
     border: none;
     padding: 18px 20px;
-
   }
-
 }
 
 @media only screen and (min-width: 821px) {
@@ -185,5 +195,4 @@
   .burgeropen {
     display: none;
   }
-
 }

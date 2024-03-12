@@ -25,6 +25,7 @@
   border: 0.125rem solid var(--main-blue); /* 2px */
   transition: transform 0.2s ease-in-out;
 }
+
 .primary:hover {
   color: var(--main-white);
   background: rgba(20, 127, 191, 1);
@@ -65,7 +66,7 @@
 }
 
 .secondary:hover {
-  color: #4DB2F0;
+  color: #4db2f0;
 }
 
 .secondary .faArrowRight {
@@ -76,6 +77,16 @@
 
 .secondary:hover .faArrowRight {
   transform: translateX(5px);
+}
+
+.sign-up {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 1.5rem 2.5rem; /* 15px 30px */
+  color: var(--main-white);
+  background: var(--main-blue);
+  border: 0.125rem solid var(--main-blue); /* 2px */
+  transition: transform 0.2s ease-in-out;
 }
 
 /* Media Queries */

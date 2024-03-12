@@ -19,7 +19,7 @@ const Hiring: React.FC = () => {
           window.open('https://thehub.io/startups/nordinsight', '_blank')
         }
       >
-        See open positions in thehub{' '}
+        See open positions on thehub{' '}
         <FontAwesomeIcon
           icon={faArrowRight}
           style={{ width: '16px', height: '16px' }}

@@ -44,12 +44,12 @@ const Home: React.FC = () => {
           <section>
             <CTA />
           </section>
-          <section>
+          {/* <section>
             <Testimonials />
-          </section>
-          <section>
+          </section> */}
+          {/* <section>
             <Partners heading="Join the many hospitals optimizing their MRI procedures with NordInsight" />
-          </section>
+          </section> */}
           <section>
             <ProductDetails />
           </section>

@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 15%;
+  padding-bottom: 30vh;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+.results {
+  margin-top: 50px;
+}
+.implant {
+  display: none;
+  padding: 10px;
+  margin: 10px;
+  background: #f0eeeb;
+  border-radius: 10px;
+  border: 0.1px solid #2b251b;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.implant a {
+  text-decoration: none;
+  color: #232d2e;
+  width: 100%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  height: 150px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+.container p {
+  width: 80%;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+.container form {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.container input {
+  padding: 15px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50px;
+  background: #f0eeeb;
+  border: 1px solid #000000;
+}
+.container input:focus {
+  outline: none;
+}
+.container button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 100;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 25px;
+  background: #6ecff5;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.container ul {
+  list-style-type: none;
+  padding: 0;
+}
+.container a {
+  text-decoration: none;
+}
+/* Responsive adjustments */
+@media (max-width: 968px) {
+}

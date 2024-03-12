@@ -16,7 +16,7 @@ const Footer = () => {
 
       <div className={styles.container}>
         <div className={styles.column}>
-          <p className={styles.info}>
+          <div className={styles.info}>
             <div className={styles.logoContainer}>
               <Image
                 src="/LogoHvidFinal.png"
@@ -25,16 +25,16 @@ const Footer = () => {
                 height="30"
               />
             </div>
-          </p>
-          <p className={styles.copyright}>© 2022 NordInsight</p>
+          </div>
+          <p className={styles.info}>CVR: 43001833</p>
+          <p className={styles.copyright}>© 2024 NordInsight</p>
         </div>
 
         <div className={styles.column}>
-          <p className={styles.info}>
+          {/* <p className={styles.info}>
             Store Kirkestræde 3, 3.tv <br />
             1073 København K
-          </p>
-          <p className={styles.info}>CVR: 43001833</p>
+          </p> */}
         </div>
 
         <div className={styles.column}>
@@ -59,12 +59,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={styles.column}>
+        {/* <div className={styles.column}>
           <div>
             <p className={styles.info}>Designed By</p>
             <p className={styles.highlightedText}>Emilia Clausse</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   )

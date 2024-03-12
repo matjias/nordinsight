@@ -1,7 +1,11 @@
 .wrapper {
-  width: 55%;
-  max-width: 900px;
-  margin: 35vh auto;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
 }
 
 .wrapper h2 {
@@ -9,11 +13,8 @@
 }
 
 @media (max-width: 768px) {
-
   .wrapper {
     width: 90%;
     margin: 30vh auto;
   }
-
-
 }

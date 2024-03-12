@@ -4,13 +4,13 @@ import Image from 'next/image'
 
 const Team: React.FC = () => {
   const mathiasInfo = {
-    image: <Image src="/sixten.jpg" height={600} width={467} alt="icon" />,
+    image: <Image src="/sixten.jpg" height={500} width={380} alt="icon" />,
     name: 'Mathias Sixten Pedersen',
     title: 'CTO & Co-founder',
     linkedInUrl: 'https://linkedin.com/in/sixped',
   }
   const simonInfo = {
-    image: <Image src="/simon.png" height={600} width={467} alt="icon" />,
+    image: <Image src="/simon.png" height={500} width={380} alt="icon" />,
     name: 'Simon Elliott Thomassen',
     title: 'CEO & Co-founder',
     linkedInUrl:

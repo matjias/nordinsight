@@ -20,7 +20,7 @@ const Company: React.FC = () => {
     <div className={styles.container}>
       <Layout>
         <section>
-          <Heading title="Enhancing MRI safety by facilitating access to reliable, updated information.">
+          <Heading title="Enhancing MRI safety by facilitating access to reliable and up-to-date information.">
             <div className={styles.button}>
               <Button
                 onClick={toggleModal}
@@ -42,9 +42,9 @@ const Company: React.FC = () => {
           <section>
             <CompanyTestimonial openModal={toggleModal} />
           </section>
-          <section>
+          {/* <section>
             <Partners heading="Our partners and collaborators" />
-          </section>
+          </section> */}
           <section>
             <Hiring />
           </section>

@@ -8,8 +8,10 @@ interface HeadingProps {
 const Heading: React.FC<HeadingProps> = ({ title, children }) => {
   return (
     <div className={styles.wrapper}>
-      <h2>{title}</h2>
-      {children}
+      <div className={styles.title}>
+        <h2>{title}</h2>
+        {children}
+      </div>
     </div>
   )
 }

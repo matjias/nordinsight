@@ -7,7 +7,8 @@ interface CardProps {
   subtitle?: string
   text: string
   layout: 'left' | 'right'
-  imgUrl: string
+  imgUrl?: string
+  videoUrl?: string
   buttonTitle?: string
   onClickFunction?: () => void
 }
@@ -18,6 +19,7 @@ const FeatureCard: React.FC<CardProps> = ({
   text,
   layout,
   imgUrl,
+  videoUrl,
   buttonTitle,
   onClickFunction,
 }) => {
@@ -28,14 +30,21 @@ const FeatureCard: React.FC<CardProps> = ({
       }`}
     >
       <div className={styles.img}>
-        <Image
-          src={imgUrl}
-          alt="product-image"
-          layout="responsive"
-          objectFit="cover"
-          width={460}
-          height={352}
-        />
+        {imgUrl && (
+          <Image
+            src={imgUrl}
+            alt="product-image"
+            layout="fill"
+            objectFit="cover"
+          />
+        )}
+        {videoUrl && (
+          <div className={styles.videoWrapper}>
+            <video autoPlay muted loop>
+              <source src={videoUrl} />
+            </video>
+          </div>
+        )}
       </div>
       <div className={styles.info}>
         {title && <h4>{title}</h4>}
