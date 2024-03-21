@@ -65,7 +65,7 @@ const NavBar: React.FC<{ openModal: () => void }> = ({ openModal }) => {
           type={ButtonType.primary}
           onClick={() =>
             (window.location.href =
-              'https://dev-nordradiology.herokuapp.com/sign-up/trial')
+              'https://db.nordradiology.com/sign-up/trial')
           }
         >
           Sign up

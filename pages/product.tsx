@@ -18,8 +18,7 @@ const Company: React.FC = () => {
   }
 
   const signupRedirect = () => {
-    window.location.href =
-      'https://dev-nordradiology.herokuapp.com/sign-up/trial'
+    window.location.href = 'https://db.nordradiology.com/sign-up/trial'
   }
 
   return (
@@ -33,7 +32,7 @@ const Company: React.FC = () => {
                   type={ButtonType.signUp}
                   onClick={() =>
                     (window.location.href =
-                      'https://dev-nordradiology.herokuapp.com/sign-up/trial')
+                      'https://db.nordradiology.com/sign-up/trial')
                   }
                 >
                   Sign up for a Free Trial
