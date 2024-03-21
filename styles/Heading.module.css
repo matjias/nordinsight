@@ -1,0 +1,20 @@
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.wrapper h2 {
+  margin: var(--heading-margin);
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+    margin: 30vh auto;
+  }
+}

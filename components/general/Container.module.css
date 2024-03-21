@@ -1,0 +1,14 @@
+.wrapper {
+padding: 29px 35px 29px 33px;
+border-radius: 15px;
+border: 1px solid #535353;
+background: #123848;
+text-align: left;
+display: flex;
+flex-direction: column;
+gap: 24px;
+}
+
+.wrapper h5 {
+    margin: 0;
+}

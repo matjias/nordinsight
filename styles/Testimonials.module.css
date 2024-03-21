@@ -1,0 +1,67 @@
+.wrapper h3 {
+    margin: var(--heading-margin);
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    overflow-x: auto; 
+    gap: 24px;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+
+}
+
+.dots {
+    display: none;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px; 
+}
+
+.dot, .activeDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #D0D0D0;
+    transition: 0.3s;
+}
+
+.activeDot {
+    background: #000; 
+}
+
+@media only screen and (max-width: 1270px) {
+    .dots {
+        display: flex;
+    }
+
+    .testimonial {
+        width: 65%;
+    }
+
+    .cards > div {
+        width: 65%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .dots {
+        display: flex;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+
+    .cards > div {
+        width: 100%;
+    }
+}
+

@@ -1,6 +1,3 @@
-import Image from "next/image";
-import FaqElement from "../components/utils/FAQElement";
-import ProgressBar from "../components/utils/ProgressBar";
 import styles from "../styles/Terms.module.css";
 import fs from "fs";
 import { marked } from "marked";
