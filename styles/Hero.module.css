@@ -49,12 +49,14 @@
   .hero {
     width: 100%;
     text-align: center;
-    margin: 0 auto;
+    margin: 200px auto;
+    padding: 50px;
     align-items: center;
   }
 
   .hero h2 {
     text-align: center;
+    font-size: 2.2rem;
   }
 
   .hero p {

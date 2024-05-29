@@ -79,3 +79,19 @@
   font-weight: 100;
   max-width: 70%;
 }
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .implant {
+    padding: 20px;
+    width: 90%;
+  }
+  .contact {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact h4 {
+    max-width: 100%;
+  }
+}

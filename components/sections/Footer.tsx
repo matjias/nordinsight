@@ -5,14 +5,7 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.lineContainer}>
-        <Image
-          src="/gradient_line.svg"
-          alt="gradient-line"
-          width="1084"
-          height="5"
-        />
-      </div>
+      <div className={styles.lineContainer}></div>
 
       <div className={styles.container}>
         <div className={styles.column}>

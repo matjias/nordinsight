@@ -35,7 +35,7 @@ const Company: React.FC = () => {
                       'https://db.nordradiology.com/sign-up/trial')
                   }
                 >
-                  Sign up for a Free Trial
+                  Sign up
                 </Button>
               </div>
             </Heading>

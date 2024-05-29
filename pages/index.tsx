@@ -27,6 +27,8 @@ const Home: React.FC = () => {
           content="The only implant database radiologists and radiographers
             will ever need to find MRI-conditinals"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"

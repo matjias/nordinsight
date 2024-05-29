@@ -9,6 +9,7 @@ import CompanyTestimonial from '../components/sections/CompanyTestimonial'
 import ContactModal from '../components/ContactModal'
 import Heading from '../components/sections/Heading'
 import Button, { ButtonType } from '../components/general/Button'
+import productPageStyles from '../styles/product.module.css'
 
 const Company: React.FC = () => {
   const [isModalOpen, setModalOpen] = useState(false)
@@ -19,7 +20,7 @@ const Company: React.FC = () => {
   return (
     <div className={styles.container}>
       <Layout>
-        <section>
+        <section className={productPageStyles.hero}>
           <Heading title="Enhancing MRI safety by facilitating access to reliable and up-to-date information.">
             <div className={styles.button}>
               <Button
