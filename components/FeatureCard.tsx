@@ -39,11 +39,12 @@ const FeatureCard: React.FC<CardProps> = ({
           />
         )}
         {videoUrl && (
-          <div className={styles.videoWrapper}>
-            <video autoPlay muted loop>
-              <source src={videoUrl} />
-            </video>
-          </div>
+          <div
+            className={styles.videoWrapper}
+            dangerouslySetInnerHTML={{
+              __html: `<video preload="auto" playsinline autoplay muted loop><source src=${videoUrl} /></video>`,
+            }}
+          ></div>
         )}
       </div>
       <div className={styles.info}>
