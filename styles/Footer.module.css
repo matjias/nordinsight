@@ -7,7 +7,16 @@
 
 .lineContainer {
   display: flex;
+  height: 5px;
+  width: 100%;
+  border-radius: 20px;
   justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(74, 64, 64, 0),
+    rgb(85, 137, 154),
+    rgba(53, 49, 49, 0)
+  );
   margin-bottom: 100px;
 }
 
