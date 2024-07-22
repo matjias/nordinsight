@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nordinsight.com
+
+# Sitemaps
+Sitemap: https://nordinsight.com/sitemap.xml

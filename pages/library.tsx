@@ -17,10 +17,21 @@ const Library: React.FC<{ implants: any[] }> = ({ implants }) => {
     window.location.href = 'https://db.nordradiology.com/sign-up/trial'
   }
 
-  const search = (term) => {
+  const log = async (searchTerm) => {
+    const res = await fetch('/api/log/search', {
+      method: 'POST',
+      body: JSON.stringify({ searchTerm }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+  }
+
+  const search = async (term) => {
     const filtered = implants.filter((implant) =>
       implant.model.toLowerCase().includes(term.toLowerCase()),
     )
+    log(term)
     for (const implant of filtered) {
       const impElement = document.getElementById(implant.slug)
       if (impElement) {
