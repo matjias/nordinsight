@@ -1,4 +1,17 @@
 module.exports = {
+  async headers() {
+      return [
+          {
+              source: '/(.*)?', // Matches all pages
+              headers: [
+                  {
+                      key: 'X-Frame-Options',
+                      value: 'DENY',
+                  }
+              ]
+          }
+      ]
+  },
   reactStrictMode: true,
   future: {
     webpack5: true, // by default, if you customize webpack config, they switch back to version 4. 

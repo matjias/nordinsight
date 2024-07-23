@@ -14,12 +14,14 @@ export default async function handler(
   if (req.method === 'POST') {
     config()
 
-    const detectedIp = requestIp.getClientIp(req)
-    const fromCountry = geoip.lookup(detectedIp)
+    // const detectedIp = requestIp.getClientIp(req)
+    // const fromCountry = geoip.lookup(detectedIp)
     const searchTerm = req.body.searchTerm
 
-    console.log(detectedIp)
-    console.log('Search term: ' + searchTerm + '\n' + 'From: ' + fromCountry)
+    // console.log(detectedIp)
+    // console.log('Search term: ' + searchTerm + '\n' + 'From: ' + fromCountry)
+
+    const fromCountry = 'unknown'
 
     const mailData = {
       sender: 'NordInsight',
