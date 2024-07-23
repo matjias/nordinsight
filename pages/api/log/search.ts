@@ -29,7 +29,7 @@ export default async function handler(
     const mailData = {
       sender: 'NordInsight',
       senderMail: 'form@nordinsight.com',
-      recipients: ['msixten@nordinsight.com'],
+      recipients: ['info@nordinsight.com'],
       subject: `There has been a search on nordinsight.com`,
       body: 'Search term: ' + searchTerm + '\n' + 'From: ' + detectedIp,
     }
