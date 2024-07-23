@@ -20,7 +20,7 @@ export default async function handler(
     // const fromCountry = geoip.lookup(detectedIp)
     const searchTerm = req.body.searchTerm
     // console.log('Search term: ' + searchTerm + '\n' + 'From: ' + fromCountry)
-    const fromCountry = 'unknown'
+    const fromCountry = detectedIp
 
     const mailData = {
       sender: 'NordInsight',
