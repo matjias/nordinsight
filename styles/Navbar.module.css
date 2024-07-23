@@ -198,3 +198,38 @@
     display: none;
   }
 }
+
+.surveyPopup {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(106, 106, 106, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.survey {
+  position: relative;
+  width: 50%;
+  height: 80%;
+}
+
+.surveyClose {
+  z-index: 2000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.surverEmb {
+  width: 100%;
+  height: 100%;
+}

@@ -17,9 +17,10 @@ export default async function handler(
     const detectedIp = requestIp.getClientIp(req)
 
     console.log(detectedIp)
-    const fromCountry = geoip.lookup(detectedIp)
+    // const fromCountry = geoip.lookup(detectedIp)
     const searchTerm = req.body.searchTerm
-    console.log('Search term: ' + searchTerm + '\n' + 'From: ' + fromCountry)
+    // console.log('Search term: ' + searchTerm + '\n' + 'From: ' + fromCountry)
+    const fromCountry = 'unknown'
 
     const mailData = {
       sender: 'NordInsight',
