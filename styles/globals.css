@@ -34,6 +34,7 @@ html,
 body {
   font-size: 100%; /* 16px */
   color: var(--main-white);
+  overflow-x: hidden;
   font-family: 'Inter', sans-serif;
   font-feature-settings: 'clig' 0, 'liga' 0;
   background: linear-gradient(
