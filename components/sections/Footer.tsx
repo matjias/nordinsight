@@ -12,7 +12,7 @@ const Footer = () => {
           <div className={styles.info}>
             <div className={styles.logoContainer}>
               <Image
-                src="/LogoHvidFinal.png"
+                src="/LogohvidFinal.png"
                 alt="nordinsight-logo"
                 width="140"
                 height="30"
@@ -20,7 +20,12 @@ const Footer = () => {
             </div>
           </div>
           <p className={styles.info}>CVR: 43001833</p>
-          <p className={styles.copyright}>© 2024 NordInsight</p>
+          <p className={styles.copyright}>
+            © 2024 NordInsight -{' '}
+            <a href="https://www.linkedin.com/in/emiliaclausse/">
+              Design by Emilia Clausse
+            </a>
+          </p>
         </div>
 
         <div className={styles.column}>
