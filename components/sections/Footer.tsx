@@ -57,6 +57,21 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className={styles.column}>
+          <div>
+            <p className={styles.info}>Information:</p>
+            <div className={styles.highlightedText}>
+              <Link href="/terms">Terms and Conditions</Link>
+            </div>
+            <div className={styles.highlightedText}>
+              <Link href="/refund">Refund Policy</Link>
+            </div>
+            <div className={styles.highlightedText}>
+              <Link href="/privacy">Privacy Notice</Link>
+            </div>
+          </div>
+        </div>
+
         {/* <div className={styles.column}>
           <div>
             <p className={styles.info}>Designed By</p>

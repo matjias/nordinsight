@@ -32,7 +32,7 @@ const TestInfo: React.FC<{
       <div className={styles.wrapper}>
         <meta name="robots" content="noindex" />
         <div className={styles.instructions}>
-          <h4>Terms and Condition</h4>
+          <h4>Refund Policy</h4>
           <div dangerouslySetInnerHTML={{ __html: content }}></div>
         </div>
         <div className={styles.extra}></div>
@@ -43,7 +43,7 @@ const TestInfo: React.FC<{
 export default TestInfo
 
 export async function getStaticProps({ params }) {
-  const docDirectory = path.join(process.cwd(), 'docs/terms.md')
+  const docDirectory = path.join(process.cwd(), 'docs/refund.md')
 
   const data = fs.readFileSync(docDirectory, 'utf8')
   const doc = matter(data)
