@@ -49,7 +49,9 @@ body {
   */
 }
 
-#search::before, #library::before, #conditionalFinder::before  {
+#search::before,
+#library::before,
+#conditionalFinder::before {
   content: '';
   display: block;
   height: 200px;

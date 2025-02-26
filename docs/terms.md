@@ -5,10 +5,7 @@ author: NordInsight
 
 EFFECTIVE DATE: 1ST JANARY 2025.
 
-PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE USING THE
-NORDINSIGHT IMPLANT DATABASE. BY ACCESSING OR USING THE DATABASE, YOU AGREE
-TO BE BOUND BY THESE TERMS AND CONDITIONS. IF YOU DO NOT AGREE TO ALL OF THESE
-TERMS, DO NOT USE THE DATABASE.
+This Terms and Conditions document for NordInsight Health Tech ApS ("NordInsight") Services and NordInsight Implant Database ("the database") sets forth the conditions that govern your access to and use of the database. By accessing or using the database, you agree to abide by these Terms and Conditions. If you do not agree with all of these terms, please refrain from using the database.
 
 1. Use of the NordInsight Implant Database
 

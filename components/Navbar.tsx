@@ -90,9 +90,19 @@ const NavBar: React.FC<{ openModal: () => void }> = ({ openModal }) => {
               Library
             </Link>
           </div>
-          <Button type={ButtonType.primary} onClick={() => setSurveyOpen(true)}>
-            Get Contacted
+
+          <Button
+            small
+            onClick={() => {
+              window.location.href = 'https://db.nordradiology.com'
+            }}
+            type={ButtonType.primary}
+          >
+            <span>Go to platform</span>
           </Button>
+          {/* <Button type={ButtonType.primary} onClick={() => setSurveyOpen(true)}>
+            Get Contacted
+          </Button> */}
         </div>
       </nav>
     </>

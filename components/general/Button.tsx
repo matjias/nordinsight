@@ -8,6 +8,7 @@ export enum ButtonType {
   submit = 'submit',
   secondary = 'secondary',
   signUp = 'sign-up',
+  tertiary = 'tertiary',
 }
 
 const Button: React.FC<{
@@ -29,7 +30,7 @@ const Button: React.FC<{
       onClick={(e) => onClick(e, value)}
     >
       {children}
-      {type === ButtonType.secondary && (
+      {(type === ButtonType.secondary || type === ButtonType.tertiary) && (
         <>
           <FontAwesomeIcon
             className={styles.faArrowRight}
