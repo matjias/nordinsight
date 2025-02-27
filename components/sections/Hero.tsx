@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
           </Button> */}
         </div>
 
-        {/* <div className={styles.notice}>
+        <div className={styles.notice}>
           <h4>ECR 2025</h4>
           <p>
             Help build the future of MRI safety with NordInsight. Meet us at ECR
@@ -45,13 +45,13 @@ const Hero: React.FC = () => {
             small
             onClick={() => {
               window.location.href =
-                'https://calendly.com/selliott-23/nordinsight-implant-database'
+                'https://calendly.com/selliott-23/ecr-nordinsight-meeting'
             }}
             type={ButtonType.secondary}
           >
             <span>Schedule a demo</span>
           </Button>
-        </div> */}
+        </div>
       </div>
     </div>
   )
