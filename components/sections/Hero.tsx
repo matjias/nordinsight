@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
             }}
             type={ButtonType.tertiary}
           >
-            <span>Share your vision</span>
+            <span>Get contacted</span>
           </Button>
           {/* <Button
             small
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
           </Button> */}
         </div>
 
-        <div className={styles.notice}>
+        {/* <div className={styles.notice}>
           <h4>ECR 2025</h4>
           <p>
             Help build the future of MRI safety with NordInsight. Meet us at ECR
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
           >
             <span>Schedule a demo</span>
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   )
